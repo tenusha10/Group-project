@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+    <link href="Login.css" rel="stylesheet">
+
+    <script type="text/javascript">
+        function password(){
+            var username = document.getElementById("text1").value;
+            var password = document.getElementById("text2").value;
+
+            if (username == "alice" && password == "ih8myself")
+            {
+                alert("Correct Password");
+            }
+            else 
+            {
+                alert("Incorrect Password");
+            }
+        }
+    </script>
+</head>
+<body>
+    
+    <form class='box'>
+        <h1>Login</h1>
+        <input type='text' id="text1" placeholder='Username'>
+        <input type='password' id="text2"placeholder='Password'>
+        <input type='button' id="submit" value='Login' onclick="password()">
+    </form>
+</body>
+</html>
