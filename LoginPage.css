@@ -1,4 +1,16 @@
 body{
+  background-color:#aaaabb;}
+  
+h1.head{
+  padding: 60px;
+  text-align: center;
+  background: rgba(76, 175, 80, 0.3)
+  color: black;
+  font-size: 60px;
+  font-family: courier new, Times;
+  }
+  
+  body{
     padding:0;
     margin:0;
     background:url('https://discourse-cdn.osmc.tv/uploads/default/original/2X/9/9dc2a23cf864feadcb395efa3dbe626a08159aeb.png');
