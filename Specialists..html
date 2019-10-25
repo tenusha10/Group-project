@@ -1,0 +1,144 @@
+
+<style type = "text/css">
+
+
+  
+h1.head{
+  padding: 60px;
+  text-align: center;
+  background: rgba(76, 175, 80, 0.3)
+  color: black;
+  font-size: 60px;
+  font-family: courier new, Times;
+  }
+  
+  body{
+    padding:0;
+    margin:0;
+    background:url('https://discourse-cdn.osmc.tv/uploads/default/original/2X/9/9dc2a23cf864feadcb395efa3dbe626a08159aeb.png');
+    background-size:cover no repeat;
+    font-family:sans-serif;
+    margin:0 auto;
+	height: 6000px;
+
+}
+
+
+.box{
+    width:1400px;
+	height: 600px;
+    padding:40px;
+    background:#191919;
+    text-align: center;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    border:2px solid #2980b9;
+    border-radius:24px;
+    opacity:0.75;
+    margin:5px;
+
+}
+
+.box input[type='text'], .box input[type='password']{
+    background:none;
+    border:0;
+    border:2px solid #2980b9;
+    display:block;
+    margin:20px auto;
+    text-align:center;
+    padding:14px 10px;
+    border-radius:24px;
+    width:200px;
+    color:white;
+    transition:0.5s;
+}
+.box input[type='text']:focus, .box input[type='password']:focus{
+    width:280px;
+    border-color:#27ae60;
+}
+
+.box input[type='button']{
+    background:none;
+    border:0;
+    border:2px solid #2980b9;
+    display:block;
+    margin:120px auto;
+    text-align:center;
+    padding:14px 10px;
+    border-radius:24px;
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+	float:left;
+	margin-right:300px;
+    width:130px;
+    color:white;
+    transition:0.5s;
+    cursor:pointer;
+    
+}
+
+.box input[type='button']:hover{
+    background:#27ae60;
+}
+
+.box h1{
+    color:white;
+}
+
+.box2{
+	position:absolute;
+	top:auto;
+	left:50%;
+	width:1400px;
+	height: 600px;
+    padding:40px;
+    background:#191919;
+    text-align: center;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    border:2px solid #2980b9;
+    border-radius:24px;
+    opacity:0.75;
+    margin:5px;
+}
+
+
+
+</style>
+
+<h1 class ="head">Helpdesk Operator Page</h1>
+
+<body>
+		<div class = "box">
+			<input type="button" onclick="show_hide()" value="Log Call"/>
+			<input type="button" onclick="show_hide()" value="Active Problems"/>
+			<input type="button" onclick="show_hide()" value="Solved Problems"/>
+			<input type="button" onclick="show_hide()" value="Specialists"/>
+			<input type="button" onclick="show_hide()" value="Quit"/>	
+
+		<!--<div class = "box2">
+			<input type="button" onclick="show_hide()" value="Log Call"/>
+			<input type="button" onclick="show_hide()" value="Active Problems"/>
+			<input type="button" onclick="show_hide()" value="Solved Problems"/>
+			<input type="button" onclick="show_hide()" value="Specialists"/>
+			<input type="button" onclick="show_hide()" value="Quit"/>	-->
+		
+
+<script>
+
+ function show_hide(){
+		var click = document.getElementById("drop-content");
+		if(click.style.display === "none";){
+			click.style.display = "block";
+		}
+		else {
+			click.style.display = "none";
+		}
+ }
+
+</script>
+			
+</body>
