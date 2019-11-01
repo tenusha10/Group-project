@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -41,3 +42,48 @@
     </form>
 </body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+    <link href="LoginPage.css" rel="stylesheet"> 
+    <script type="text/javascript">
+        function password(){
+            var username = document.getElementById("text1").value;
+            var password = document.getElementById("text2").value;
+            var type=""
+            if(username.trim()=="alice"){
+                type="H" 
+            }else{
+                type="S"
+            }
+            if (username.trim() == "alice" && password.trim()== "ih8myself" && type=="H")
+            {
+                alert("Welcome back!")
+                window.location.href="HelpdeskPage.php"
+            } else if(username.trim() == "bert" && password.trim()== "cry" && type=="S") {
+                window.location.href="SpecialistPage.php"
+            }
+            else 
+            {
+                alert("Incorrect Username/Password");
+            }
+        }
+    </script>
+    <img class="center" src="https://lh3.googleusercontent.com/XyGTAvQTuhXvW78pKUTPcI1vlTOAqV1-qrHk6zSme3_SU1fsP06nK6Rdt3mlDDcMknEveHWtftNSAThN-4gIK2V7w3DIuDL-0O1BOdMkx4zo_NMpsVx9QJSz3H-g0ie1NS6k0KRTDlI=w2400" alt="Logo" height="100" width="500">
+    <h1 class="greet">Welcome to IT Help Desk!</h1>
+</head>
+<body>
+    <form class='box'>
+        <h1>Login</h1>
+        <input type='text' id="text1" placeholder='Username'>
+        <input type='password' id="text2"placeholder='Password'>
+        <input type='button' id="submit" value='Login' onclick=password()>
+    </form>
+</body>
+</html>
+>>>>>>> 0782b0ff2e32361ef0bb74e7807563c53f81fad0
