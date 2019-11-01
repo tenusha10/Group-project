@@ -183,6 +183,20 @@ h1.head{
     width: 29%;
 }
 .comp_logo{
-    margin-left: auto;
+    width: 200px;
+    height: 200px;
+    display: block;
+    position: relative;
 }
+.comp_logo::after {
+    content: "";
+    background: url(image.jpg);
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+  }
   
