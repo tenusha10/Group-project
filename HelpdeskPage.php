@@ -59,6 +59,46 @@
 				</tbody>
 			</table>
 		</div>
+
+        <div class="container">
+			
+			<a class="anchor" id="solved_problems"></a>
+			<h2>Solved Problems</h2>
+			<table class="active_problems">
+				<thead>
+					<tr>
+						<th>Number</th>
+						<th>Problem Description</th>
+						<th>Created</th>
+						<th>Logged By</th>
+						<th>Reported By</th>
+						<th>See More</th>
+						
+						<!--
+						<th>Assigned To</th>
+						<th>Serial Number</th>
+						<th>OS</th>
+						<th>Software</th>
+						-->
+					</tr>
+				</thead>
+				<tbody>
+					<?php 
+						for($i=0;$i<=10; $i=$i+1){
+							echo '<tr>
+								<td>'.(1+$i).'</td>
+								<td>Example</td>
+								<td>01/01/2020</td>
+								<td>User1</td>
+								<td>User2</td>
+								<td><button>See More</button></td>
+							</tr>';
+						}
+					?>
+				</tbody>
+			</table>
+			
+		</div>
 		
 		<div class="container">
 			<a class="anchor" id="specialist"></a>
@@ -80,6 +120,9 @@
 
 		</div>
         
+        
+
+
         <div class="log_call_container">
 			<a class="anchor" id="log_call"></a>
 			<h2>Log a Call</h2>
