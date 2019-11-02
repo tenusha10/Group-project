@@ -24,7 +24,7 @@
         
         <div class="log_call_container">
 			<a class="anchor" id="log_call"></a>
-			<h2>Log a Call</h2>
+			<h2 style="text-align: center;">Log a Call</h2>
             
 			<style type="text/css">
                 #newDiv{
@@ -94,7 +94,8 @@
                     <option value="bert">Bert</option>
                     <option value="clara">Clara</option>
                     </select><br>
-                    Notes: <textarea name="notes" rows="5" cols="30"></textarea><br><br>
+                    Notes: <textarea name="notes" rows="5" cols="30"></textarea><br><br><br><br><br><br>
+                    <input type="checkbox" name="solved" value="solved">Solved?<br>
                     <input type="submit"><br>
                 </form>
             </div>
@@ -132,7 +133,8 @@
                     <option value="bert">Bert</option>
                     <option value="clara">Clara</option>
                     </select><br>
-                    Notes: <textarea name="notes" rows="5" cols="30"></textarea><br><br>
+                    Notes: <textarea name="notes" rows="5" cols="30"></textarea><br><br><br><br><br><br>
+                    <input type="checkbox" name="solved" value="solved">Solved?  <br>
                     <input type="submit"><br>
                 </form>
             </div>
