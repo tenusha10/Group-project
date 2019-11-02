@@ -25,6 +25,7 @@
         <div class="log_call_container">
 			<a class="anchor" id="log_call"></a>
 			<h2>Log a Call</h2>
+            
 			<style type="text/css">
                 #newDiv{
                   display: none;
@@ -35,7 +36,8 @@
                 #otherDiv{
                   display: none;
                 }
-            </style> 	
+            </style> 
+            
             <div id="callDiv">
                 Caller Name: <input type="text" name="caller"><br>
                 Ext Num: <input type="text" name="ExtNum"><br>
@@ -55,8 +57,9 @@
             <div id="otherDiv">
                 <form action="other.php" method="post">
                     <br><br>
+                    <h2>Other</h2>
         <!--        If the caller is  calling about something else (not sure where to submit this data if at all)-->
-                    Notes: <input type="text" name="notes"><br>
+                    Notes: <textarea name="notes" rows="5" cols="30"></textarea><br><br>
                     <input type="submit"><br>
                 </form>
             </div>
@@ -65,13 +68,23 @@
                 <form action="new_problem.php" method="post">
         <!--        If the operator needs to add a new problem (caller doesn't specify a previous problem ID)-->
                     <br><br>
-                    New Problem: <br>
+                    <h2>New Problem: </h2><br>
                     Description: <input type="text" name="caller"><br>
                     Problem Type: <select name="problemType">
                     <option value="">Select...</option>
-                    <option value="hardware">Hardware</option>
-                    <option value="software">Software</option>
-                    <option value="network">Network</option>
+                    <optgroup label="Hardware">
+                        <option value="printer">Printer</option>
+                        <option value="printerJam">&nbsp;--Jammed</option>
+                        <option value="printerRefill">&nbsp;--Needs more paper / ink</option>
+                        <option value="phone">Phone</option>
+                    </optgroup>
+                    <optgroup label="Software">
+                        <option value="renewal">Need renewal</option>
+                        <option value="update">Update</option>
+                    </optgroup>
+                    <optgroup label="Network">
+                        <option value="wifi">Wifi Down</option>
+                    </optgroup>
                     </select><br>
                     Hardware Serial: <input type="text" name="serial"><br>
                     OS: <input type="text" name="OS"><br>
@@ -81,7 +94,7 @@
                     <option value="bert">Bert</option>
                     <option value="clara">Clara</option>
                     </select><br>
-                    Notes: <textarea name="notes" rows="5" cols="30"></textarea><br>
+                    Notes: <textarea name="notes" rows="5" cols="30"></textarea><br><br>
                     <input type="submit"><br>
                 </form>
             </div>
@@ -92,14 +105,24 @@
                     corresponding problem data fills the input things and the operator can change them and resubmit it to
                     the DB-->
                     <br><br>
-                    Modify Problem: <br>
+                    <h2>Modify Problem: </h2><br>
                     Problem Num: <input type="text" name="num"><br>
                     Description: <input type="text" name="caller"><br>
                     Problem Type: <select name="problemType">
                     <option value="">Select...</option>
-                    <option value="hardware">Hardware</option>
-                    <option value="software">Software</option>
-                    <option value="network">Network</option>
+                    <optgroup label="Hardware">
+                        <option value="printer">Printer</option>
+                        <option value="printerJam">&nbsp;--Jammed</option>
+                        <option value="printerRefill">&nbsp;--Needs more paper / ink</option>
+                        <option value="phone">Phone</option>
+                    </optgroup>
+                    <optgroup label="Software">
+                        <option value="renewal">Need renewal</option>
+                        <option value="update">Update</option>
+                    </optgroup>
+                    <optgroup label="Network">
+                        <option value="wifi">Wifi Down</option>
+                    </optgroup>
                     </select><br>
                     Hardware Serial: <input type="text" name="serial"><br>
                     OS: <input type="text" name="OS"><br>
@@ -109,7 +132,7 @@
                     <option value="bert">Bert</option>
                     <option value="clara">Clara</option>
                     </select><br>
-                    Notes: <input type="text" name="notes"><br>
+                    Notes: <textarea name="notes" rows="5" cols="30"></textarea><br><br>
                     <input type="submit"><br>
                 </form>
             </div>

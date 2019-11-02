@@ -44,6 +44,29 @@ h2 {
 	 
  }
 
+.log_call_container input[type=submit]{
+     position: relative;
+     right: 0;
+}
+
+ .log_call_container select{
+	 position:absolute;
+	 left:20%;
+	 
+ }
+
+ .log_call_container textarea{
+	 position:absolute;
+	 left:20%;
+     margin: 0px; 
+     width: 590px; 
+     height: 95px;	 
+ }
+
+ .log_call_container h2{
+	 text-align: center;
+ }
+
  .log_call_container br{
 	 float:right;
  }
