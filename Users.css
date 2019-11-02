@@ -97,6 +97,7 @@ a.anchor {
 	position: fixed; /* Set the navbar to fixed position */
 	top: 0; /* Position the navbar at the top of the page */
 	width: 100%; /* Full width */
+    z-index: 5 /* Stop other divs from overlapping the navbar */
 }
 
 /* Links inside the navbar */
