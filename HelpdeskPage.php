@@ -216,7 +216,7 @@
 			
 			<a class="anchor" id="solved_problems"></a>
 			<h2>Solved Problems</h2>
-			Created <select><option>before</option><option>after</option></select><input type="date"></input>
+			<span class="white">Created</span><select><option>before</option><option>after</option></select><input type="date"></input>
 			<input type="button" value="Search">
 			<table class="active_problems">
 				<thead>
