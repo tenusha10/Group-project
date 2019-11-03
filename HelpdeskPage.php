@@ -258,7 +258,7 @@
 			<a class="anchor" id="specialist"></a>
 			<h2>Specialists</h2>
 			<table class="specialist">
-				<thead><tr><th>Specalist Name</th><th>Speciality</th><th>Assigned Jobs</th></tr></thead>
+				<thead><tr><th>Specialist Name</th><th>Speciality</th><th>Assigned Jobs</th><th>Availability</th></tr></thead>
 				<tbody>
 					<?php 
 						for($i=0;$i<=10; $i=$i+1){
@@ -266,6 +266,7 @@
 								<td>Name'.(1+$i).'</td>
 								<td>IT</td>
 								<td>'.(($i+1)*7).'</td>
+								<td>Always</th>
 							</tr>';
 						}
 					?>
