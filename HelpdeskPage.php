@@ -59,7 +59,7 @@
                     <br><br>
                     <h2>Other</h2>
         <!--        If the caller is  calling about something else (not sure where to submit this data if at all)-->
-                    Notes: <textarea name="notes" rows="5" cols="30"></textarea><br><br>
+                    Notes: <textarea name="notes" rows="5" cols="30"></textarea><br><br><br><br><br>
                     <input type="submit"><br>
                 </form>
             </div>
