@@ -267,7 +267,10 @@
 								<td>Name'.(1+$i).'</td>
 								<td>IT</td>
 								<td>'.(($i+1)*7).'</td>
-								<td>Always <button>Change</button></td>
+								<td><select id="availability">
+								<option value = "available">Available</option>
+								<option value = "unavailable">Unavailable</option>
+								</td>
 							</tr>';
 						}
 					?>
@@ -276,5 +279,24 @@
 
 		</div>
 		
+		<div class="container">
+		<a class="anchor" id="employees"></a>
+		<h2>Employees</h2>
+		<table class="employees">
+		<thead><tr><th>Name</th><th>ID number</th><th>Job Title</th><th>Department</th><th>Phone Number</th></tr></thead>
+		<tbody>
+			<?php 
+						for($i=0;$i<=10; $i=$i+1){
+							echo '<tr>
+								<td>Name'.(1+$i).'</td>
+								<td>123</td>
+								<td>Accountant</td>
+								<td>Accounting</td>
+								<td>123456</td>
+							</tr>';
+						}
+					?>
+		</tbody>
+		</div>
 	</body>
 </html>
