@@ -309,7 +309,7 @@
                     Tel Number: <input type="text" name="tel"><br>
                     Speciality: <input type="text" name="speciality"><br>
                     Availability: <input type="text" name="availability"><br>
-                    <input type="submit"> Submit </submit>
+                    <input type="submit"></submit>
                 </form>
             </div>
             </div>
