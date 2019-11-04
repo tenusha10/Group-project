@@ -59,7 +59,7 @@
                     <br><br>
                     <h2>Other</h2>
         <!--        If the caller is  calling about something else (not sure where to submit this data if at all)-->
-                    Notes: <textarea name="notes" rows="5" cols="30"></textarea><br><br>
+                    Notes: <textarea name="notes" rows="5" cols="30"></textarea><br><br><br><br><br>
                     <input type="submit"><br>
                 </form>
             </div>
@@ -93,6 +93,7 @@
                     <option value="">Select...</option>
                     <option value="bert">Bert</option>
                     <option value="clara">Clara</option>
+		    <option value="clara">None</option>
                     </select><br>
                     Notes: <textarea name="notes" rows="5" cols="30"></textarea><br><br><br><br><br><br>
                     <input type="checkbox" name="solved" value="solved">Solved?<br>
@@ -170,6 +171,15 @@
                       Other.style.display = "none";
                   }
                   }
+                
+                function showDivNewSpecialist() {
+                    newSpecialist.style.display = "block";
+                    modifySpecialist.style.display = "none";
+                }
+                function showDivModifySpecialist() {
+                    newSpecialist.style.display = "none";
+                    modifySpecialist.style.display = "block";
+                }
             </script>
 
 		</div>   
@@ -258,6 +268,8 @@
 			<a class="anchor" id="specialist"></a>
 			<h2>Specialists</h2>
 			<table class="specialist">
+
+
 				<thead><tr><th>Specialist Name</th><th>Speciality</th><th>Assigned Jobs</th><th>Availability</th></tr></thead>
 				<tbody>
 					<?php 
@@ -272,8 +284,39 @@
 					?>
 				</tbody>
 			</table>
-
 		</div>
 		
+        <div class="container">
+            <a class="anchor" id="addEmployee"></a>
+			<h2>Add Helpdesk Operator or Specialist</h2>
+            <style type="text/css">
+                #newSpecialist{
+                  display: none;
+                }
+                #modifySpecialist{
+                  display: none;
+                }
+            </style> 
+            <input type = "button" onclick="showDivNewSpecialist()" value="Add Specialist"></input></br>
+                <input type = "button" onclick="showDivModifySpecialist()" value="Modify Specialist"> </input>
+                <div id = "newSpecialist">
+                    <form method="post">
+                        Name: <input type="text" name="name"></input><br>
+                        Tel Number: <input type="text" name="tel"></input><br>
+                        Speciality: <input type="text" name="speciality"></input><br>
+                        Availability: <input type="text" name="availability"></input><br>
+                        <input type="submit"> Submit </submit>
+                    </form>
+                </div>
+                <div id="modifySpecialist">
+                    <form method="post">
+                        Name: <input type="text" name="name"></input><br>
+                        Tel Number: <input type="text" name="tel"></input><br>
+                        Speciality: <input type="text" name="speciality"></input><br>
+                        Availability: <input type="text" name="availability"></input><br>
+                        <input type="submit"></submit>
+                    </form>
+            </div>
+        </div>
 	</body>
 </html>
