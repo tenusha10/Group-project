@@ -296,19 +296,19 @@
             <input type = "button" onclick="showDivModifySpecialist()" value="Modify Specialist"> </input>
             <div id = "newSpecialist">
                 <form method="post">
-                    Name: <input type="text" name="name"><br>
-                    Tel Number: <input type="text" name="tel"><br>
-                    Speciality: <input type="text" name="speciality"><br>
-                    Availability: <input type="text" name="availability"><br>
+                    Name: <input type="text" name="name"></input><br>
+                    Tel Number: <input type="text" name="tel"></input><br>
+                    Speciality: <input type="text" name="speciality"></input><br>
+                    Availability: <input type="text" name="availability"></input><br>
                     <input type="submit"> Submit </submit>
                 </form>
 
             <div id="modifySpecialist">
                 <form method="post">
-                    Name: <input type="text" name="name"><br>
-                    Tel Number: <input type="text" name="tel"><br>
-                    Speciality: <input type="text" name="speciality"><br>
-                    Availability: <input type="text" name="availability"><br>
+                    Name: <input type="text" name="name"></input><br>
+                    Tel Number: <input type="text" name="tel"></input><br>
+                    Speciality: <input type="text" name="speciality"></input><br>
+                    Availability: <input type="text" name="availability"></input><br>
                     <input type="submit"></submit>
                 </form>
             </div>
