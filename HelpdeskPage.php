@@ -302,7 +302,7 @@
                     Availability: <input type="text" name="availability"></input><br>
                     <input type="submit"> Submit </submit>
                 </form>
-
+            </div>
             <div id="modifySpecialist">
                 <form method="post">
                     Name: <input type="text" name="name"></input><br>
@@ -311,7 +311,6 @@
                     Availability: <input type="text" name="availability"></input><br>
                     <input type="submit"></submit>
                 </form>
-            </div>
             </div>
 		</div>
 		
