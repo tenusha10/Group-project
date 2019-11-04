@@ -267,7 +267,7 @@
 								<td>Name'.(1+$i).'</td>
 								<td>IT</td>
 								<td>'.(($i+1)*7).'</td>
-								<td>Always</th>
+								<td>Always <button>Change</button></td>
 							</tr>';
 						}
 					?>
