@@ -93,6 +93,7 @@
                     <option value="">Select...</option>
                     <option value="bert">Bert</option>
                     <option value="clara">Clara</option>
+		    <option value="clara">None</option>
                     </select><br>
                     Notes: <textarea name="notes" rows="5" cols="30"></textarea><br><br><br><br><br><br>
                     <input type="checkbox" name="solved" value="solved">Solved?<br>
