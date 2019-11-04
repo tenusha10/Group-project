@@ -1,0 +1,156 @@
+body{
+	height:6000px;
+	margin: 0;
+    font-family: sans-serif;
+    font-size: 20;
+	background:#D3D3D3;
+	margin-top:60px;
+	text-align: center;
+}
+
+h2 {
+	color:white;
+}
+
+.white{
+	color:white;
+}
+
+.container{
+	color:black;
+	display:inline-block;
+	width: 80%;
+	padding:10px;
+	background:#191919;
+	text-align: center;
+	border:2px solid #F6D300;
+	border-radius:24px;
+	margin:20px;
+ }
+ 
+ .log_call_container{
+	color:white;
+	display:inline-block;
+	width: 80%;
+	padding:10px;
+	background:#191919;
+	text-align:left;
+	border:2px solid #F6D300;
+	border-radius:24px;
+	margin:20px;
+	position:relative;
+	
+ }
+ 
+ .log_call_container input{
+	 position:absolute;
+	 left:20%;
+	 
+ }
+
+.log_call_container input[type=submit]{
+     position: relative;
+     right: 0;
+}
+
+ .log_call_container select{
+	 position:absolute;
+	 left:20%;
+	 
+ }
+
+ .log_call_container textarea{
+	 position:absolute;
+	 left:20%;
+     margin: 0px; 
+     width: 590px; 
+     height: 95px;	 
+ }
+
+ .log_call_container br{
+	 float:right;
+ }
+
+
+table {
+	background:#D3D3D3;
+	margin-left:auto; 
+    margin-right:auto;
+	border: 6px solid #525252;
+	width: 95%;
+	text-align: center;
+	margin-bottom: 50px;
+	border-collapse: collapse;
+}
+table td,th {
+  border: 2px solid #525252;
+  padding: 4px 4px;
+}
+table tbody {
+  font-size: 13px;
+}
+table thead {
+  background: #F6D300;
+  font-size: 17px;
+  font-weight: bold;
+  text-align: center;
+}
+table tbody tr:hover {
+  background-color: #525252;
+  color: white;
+}
+
+
+a.anchor {
+    display: block;
+    position: relative;
+    top: -85px;
+    visibility: hidden;
+}
+
+.header{
+	 margin-top: 65px;
+}
+#logout{float:right;}
+
+.navbar {
+	overflow: hidden;
+	background-color: #F6D300;
+	position: fixed; /* Set the navbar to fixed position */
+	top: 0; /* Position the navbar at the top of the page */
+	width: 100%; /* Full width */
+    z-index: 5 /* Stop other divs from overlapping the navbar */
+}
+
+/* Links inside the navbar */
+.navbar a {
+	font-size: 30px;
+	float: left;
+	display: block;
+	color: black;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+/* Change background on mouse-over */
+.navbar a:hover {
+  background: #C7C7C7;
+  color: black;
+}
+
+input[type=submit] {
+    background:none;
+    border:0;
+    border:2px solid #F6D300;
+    display:block;
+    margin:20px auto;
+    text-align:center;
+    padding:14px 10px;
+    border-radius:24px;
+    width:130px;
+    color:white;
+    transition:0.5s;
+    cursor:pointer; 
+}
