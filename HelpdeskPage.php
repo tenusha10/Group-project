@@ -277,7 +277,7 @@
                   display: none;
                 }
             </style> 
-            
+
 				<thead><tr><th>Specialist Name</th><th>Speciality</th><th>Assigned Jobs</th><th>Availability</th></tr></thead>
 				<tbody>
 					<?php 
@@ -292,8 +292,8 @@
 					?>
 				</tbody>
 			</table>
-            <input type = "button"> Add Specialist </input></br>
-            <input type = "button" onclick=""> Modify Specialist </input>
+            <input type = "button" onclick="showDivNewSpecialist()" value="Add Specialist"></input></br>
+            <input type = "button" onclick="showDivModifySpecialist()" value="Modify Specialist"> </input>
             <div id = "newSpecialist">
                 <form method="post">
                     Name: <input type="text" name="name"><br>
