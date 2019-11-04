@@ -269,14 +269,6 @@
 			<h2>Specialists</h2>
 			<table class="specialist">
 
-            <style type="text/css">
-                #newSpecialist{
-                  display: none;
-                }
-                #modifySpecialist{
-                  display: none;
-                }
-            </style> 
 
 				<thead><tr><th>Specialist Name</th><th>Speciality</th><th>Assigned Jobs</th><th>Availability</th></tr></thead>
 				<tbody>
@@ -292,27 +284,39 @@
 					?>
 				</tbody>
 			</table>
-            <input type = "button" onclick="showDivNewSpecialist()" value="Add Specialist"></input></br>
-            <input type = "button" onclick="showDivModifySpecialist()" value="Modify Specialist"> </input>
-            <div id = "newSpecialist">
-                <form method="post">
-                    Name: <input type="text" name="name"></input><br>
-                    Tel Number: <input type="text" name="tel"></input><br>
-                    Speciality: <input type="text" name="speciality"></input><br>
-                    Availability: <input type="text" name="availability"></input><br>
-                    <input type="submit"> Submit </submit>
-                </form>
-            </div>
-            <div id="modifySpecialist">
-                <form method="post">
-                    Name: <input type="text" name="name"></input><br>
-                    Tel Number: <input type="text" name="tel"></input><br>
-                    Speciality: <input type="text" name="speciality"></input><br>
-                    Availability: <input type="text" name="availability"></input><br>
-                    <input type="submit"></submit>
-                </form>
-            </div>
 		</div>
 		
+        <div class="container">
+            <a class="anchor" id="addEmployee"></a>
+			<h2>Add Helpdesk Operator or Specialist</h2>
+            <style type="text/css">
+                #newSpecialist{
+                  display: none;
+                }
+                #modifySpecialist{
+                  display: none;
+                }
+            </style> 
+            <input type = "button" onclick="showDivNewSpecialist()" value="Add Specialist"></input></br>
+                <input type = "button" onclick="showDivModifySpecialist()" value="Modify Specialist"> </input>
+                <div id = "newSpecialist">
+                    <form method="post">
+                        Name: <input type="text" name="name"></input><br>
+                        Tel Number: <input type="text" name="tel"></input><br>
+                        Speciality: <input type="text" name="speciality"></input><br>
+                        Availability: <input type="text" name="availability"></input><br>
+                        <input type="submit"> Submit </submit>
+                    </form>
+                </div>
+                <div id="modifySpecialist">
+                    <form method="post">
+                        Name: <input type="text" name="name"></input><br>
+                        Tel Number: <input type="text" name="tel"></input><br>
+                        Speciality: <input type="text" name="speciality"></input><br>
+                        Availability: <input type="text" name="availability"></input><br>
+                        <input type="submit"></submit>
+                    </form>
+            </div>
+        </div>
 	</body>
 </html>
