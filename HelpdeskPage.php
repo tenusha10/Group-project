@@ -15,6 +15,7 @@
 			<a href="#active_problems">Active Problems</a>
 			<a href="#solved_problems">Solved Problems</a>
 			<a href="#specialist">Specialists</a>
+			<a href="#employees">Employees</a>
 			<a id = "logout" href="http://team017.sci-project.lboro.ac.uk/group_project/LoginPage.html">Log Out</a>
 		</div>
 		<div class="header">
