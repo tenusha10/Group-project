@@ -286,7 +286,7 @@
 			</table>
 		</div>
 		
-        <div class="container">
+        <div class="log_call_container">
             <a class="anchor" id="addEmployee"></a>
 			<h2>Add Helpdesk Operator or Specialist</h2>
             <style type="text/css">
@@ -297,6 +297,14 @@
                   display: none;
                 }
             </style> 
+
+                Job Title: <select id="jobType" onchange="showDiv()">
+                <option value="">Select...</option>
+                <option value="new">New Problem</option>
+                <option value="old">Old Problem</option>
+                <option value="other">Other</option>
+                </select><br>
+
             <input type = "button" onclick="showDivNewSpecialist()" value="Add Specialist"></input></br>
                 <input type = "button" onclick="showDivModifySpecialist()" value="Modify Specialist"> </input>
                 <div id = "newSpecialist">
@@ -308,6 +316,7 @@
                         <input type="submit"> Submit </submit>
                     </form>
                 </div>
+
                 <div id="modifySpecialist">
                     <form method="post">
                         Name: <input type="text" name="name"></input><br>
