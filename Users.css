@@ -140,7 +140,7 @@ a.anchor {
   color: black;
 }
 
-input[type=submit] {
+/*input[type=submit] {
     background:none;
     border:0;
     border:2px solid #F6D300;
@@ -153,7 +153,7 @@ input[type=submit] {
     color:white;
     transition:0.5s;
     cursor:pointer; 
-}
+}*/
 
 input[type=submit]:hover{
     background:#F6D300;
