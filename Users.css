@@ -53,10 +53,13 @@ h2 {
      right: 0;
 }
 
+.log_call_container input[type=submit]:hover{
+    background:#F6D300;
+}
+
  .log_call_container select{
 	 position:absolute;
-	 left:20%;
-	 
+	 left:20%;	 
  }
 
  .log_call_container textarea{
@@ -139,21 +142,6 @@ a.anchor {
   background: #C7C7C7;
   color: black;
 }
-
-/*input[type=submit] {
-    background:none;
-    border:0;
-    border:2px solid #F6D300;
-    display:block;
-    margin:20px auto;
-    text-align:center;
-    padding:14px 10px;
-    border-radius:24px;
-    width:130px;
-    color:white;
-    transition:0.5s;
-    cursor:pointer; 
-}*/
 
 input[type=submit]:hover{
     background:#F6D300;
