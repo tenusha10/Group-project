@@ -62,6 +62,48 @@
 			</table>
 		</div>
 		
+		<div id="modifyDiv">
+                <form action="modify_problem.php" method="post">
+        <!--        If the operator needs to modify an existing problem (caller specifies their problem ID) then that
+                    corresponding problem data fills the input things and the operator can change them and resubmit it to
+                    the DB-->
+                    <br><br>
+                    <h2>Modify Problem: </h2><br>
+                    Problem Num: <input type="text" name="num"><br>
+                    Description: <input type="text" name="caller"><br>
+                    Problem Type: <select name="problemType">
+                    <option value="">Select...</option>
+                    <optgroup label="Hardware">
+                        <option value="printer">Printer</option>
+                        <option value="printerJam">&nbsp;--Jammed</option>
+                        <option value="printerRefill">&nbsp;--Needs more paper / ink</option>
+                        <option value="phone">Phone</option>
+                    </optgroup>
+                    <optgroup label="Software">
+                        <option value="renewal">Need renewal</option>
+                        <option value="update">Update</option>
+                    </optgroup>
+                    <optgroup label="Network">
+                        <option value="wifi">Wifi Down</option>
+                    </optgroup>
+                    </select><br>
+                    Hardware Serial: <input type="text" name="serial"><br>
+                    OS: <input type="text" name="OS"><br>
+                    Software: <input type="text" name="software"><br>
+                    Specialist: <select name="specialist">
+                    <option value="">Select...</option>
+                    <option value="bert">Bert</option>
+                    <option value="clara">Clara</option>
+                    </select><br>
+                    Notes: <textarea name="notes" rows="5" cols="30"></textarea><br><br><br><br><br><br>
+                    <input type="checkbox" name="solved" value="solved">Solved?  <br>
+                    <input type="submit"><br>
+                </form>
+            </div>
+
+
+
+
 		<div class="container">
 			
 			<a class="anchor" id="solved_problems"></a>

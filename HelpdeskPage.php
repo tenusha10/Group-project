@@ -14,8 +14,13 @@
 			<a href="#log_call">Log Call</a>
 			<a href="#active_problems">Active Problems</a>
 			<a href="#solved_problems">Solved Problems</a>
+<<<<<<< HEAD
 			<a href="#specialist">Specialists</a>
 			<a href="#employees">Employees</a>
+=======
+            <a href="#specialist">Specialists</a>
+            <a href="#addEmployee">Add User</a>
+>>>>>>> 42e8acb80aa1ce792a8728b1609b7f08353dd9e1
 			<a id = "logout" href="http://team017.sci-project.lboro.ac.uk/group_project/LoginPage.html">Log Out</a>
 		</div>
 		<div class="header">
@@ -172,15 +177,6 @@
                       Other.style.display = "none";
                   }
                   }
-                
-                function showDivNewSpecialist() {
-                    newSpecialist.style.display = "block";
-                    modifySpecialist.style.display = "none";
-                }
-                function showDivModifySpecialist() {
-                    newSpecialist.style.display = "none";
-                    modifySpecialist.style.display = "block";
-                }
             </script>
 
 		</div>   
@@ -270,14 +266,6 @@
 			<h2>Specialists</h2>
 			<table class="specialist">
 
-            <style type="text/css">
-                #newSpecialist{
-                  display: none;
-                }
-                #modifySpecialist{
-                  display: none;
-                }
-            </style> 
 
 				<thead><tr><th>Specialist Name</th><th>Speciality</th><th>Assigned Jobs</th><th>Availability</th></tr></thead>
 				<tbody>
@@ -296,19 +284,36 @@
 					?>
 				</tbody>
 			</table>
-            <input type = "button" onclick="showDivNewSpecialist()" value="Add Specialist"></input></br>
-            <input type = "button" onclick="showDivModifySpecialist()" value="Modify Specialist"> </input>
+		</div>
+		
+	
+	
+        <div class="log_call_container">
+            <a class="anchor" id="addEmployee"></a>
+			<h2>Add Helpdesk Operator or Specialist</h2>
+            <style type="text/css">
+                #newSpecialist{
+                  display: none;
+                }
+                #modifySpecialist{
+                  display: none;
+                }
+                #addOperator{
+                  display: none;
+                }
+            </style> 
+
+            
+            <select id="Add" onchange="showDivAdd()">
+                <option value="">Select...</option>
+                <option value="addSpecialist">New Specialist</option>
+                <option value="editSpecialist">Modify Specialist</option>
+                <option value="addOperator">Add Operator</option>
+            </select><br>     
+            
             <div id = "newSpecialist">
                 <form method="post">
-                    Name: <input type="text" name="name"></input><br>
-                    Tel Number: <input type="text" name="tel"></input><br>
-                    Speciality: <input type="text" name="speciality"></input><br>
-                    Availability: <input type="text" name="availability"></input><br>
-                    <input type="submit"> Submit </submit>
-                </form>
-            </div>
-            <div id="modifySpecialist">
-                <form method="post">
+                    <h2>Add Specialist</h2>
                     Name: <input type="text" name="name"></input><br>
                     Tel Number: <input type="text" name="tel"></input><br>
                     Speciality: <input type="text" name="speciality"></input><br>
@@ -316,7 +321,81 @@
                     <input type="submit"></submit>
                 </form>
             </div>
+
+            <div id="modifySpecialist">
+                <form method="post">
+                    <h2>Modify Specialist</h2>
+                    Name: <input type="text" name="name"></input><br>
+                    Tel Number: <input type="text" name="tel"></input><br>
+                    Speciality: <input type="text" name="speciality"></input><br>
+                    Availability: <input type="text" name="availability"></input><br>
+                    <input type="submit"></submit>
+                </form>
+            </div>
+
+            <div id="addOperator">
+                <form method="post">
+                    <h2>Add Operator</h2>
+                    Name: <input type="text" name="name"></input><br>
+                    Tel Number: <input type="text" name="tel"></input><br>
+                    <input type="submit"></submit>
+                </form>
+            </div>
+
+            <script>
+                function showDivAdd() {
+                  var selector2 = document.getElementById("Add");
+                  var value2 = selector2[selector2.selectedIndex].value
+                  var newSpecialist = document.getElementById("newSpecialist");
+                  var modifySpecialist = document.getElementById("modifySpecialist");
+                  var addOperator = document.getElementById("addOperator");
+                  if (value2=="addSpecialist"){
+                      newSpecialist.style.display = "none";
+                      modifySpecialist.style.display = "none";
+                      addOperator.style.display = "none";
+                      newSpecialist.style.display = "block";
+                  }
+                  else if (value2 == "editSpecialist"){
+                      newSpecialist.style.display = "none";
+                      modifySpecialist.style.display = "none";
+                      addOperator.style.display = "none";
+                      modifySpecialist.style.display = "block";
+                  }
+                  else if (value2 == "addOperator"){
+                      newSpecialist.style.display = "none";
+                      modifySpecialist.style.display = "none";
+                      addOperator.style.display = "none";
+                      addOperator.style.display = "block";
+                  }
+                  else if (value2 == ""){
+                      newSpecialist.style.display = "none";
+                      modifySpecialist.style.display = "none";
+                      addOperator.style.display = "none";
+                  }
+                  }
+            </script>
+        </div>
+
+	<div class="container">
+		<a class="anchor" id="employees"></a>
+		<h2>Employees</h2>
+		<table class="employees">
+		<thead><tr><th>Name</th><th>ID number</th><th>Job Title</th><th>Department</th><th>Phone Number</th></tr></thead>
+		<tbody>
+			<?php 
+						for($i=0;$i<=10; $i=$i+1){
+							echo '<tr>
+								<td>Name'.(1+$i).'</td>
+								<td>123</td>
+								<td>Accountant</td>
+								<td>Accounting</td>
+								<td>123456</td>
+							</tr>';
+						}
+					?>
+		</tbody>
 		</div>
+<<<<<<< HEAD
 		
 		<div class="container">
 		<a class="anchor" id="employees"></a>
@@ -337,5 +416,8 @@
 					?>
 		</tbody>
 		</div>
+=======
+
+>>>>>>> 42e8acb80aa1ce792a8728b1609b7f08353dd9e1
 	</body>
 </html>
