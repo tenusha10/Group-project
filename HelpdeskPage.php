@@ -306,7 +306,6 @@
     </div>
             
             
-            
     <div class="log_call_container">
             <a class="anchor" id="addEmployee"></a>
 			<h2>Add Helpdesk Operator or Specialist</h2>

@@ -15,6 +15,7 @@
 	<div class="navbar">
 		<a href="#title">Home</a>
 		<a href="#active_problems">Active Problems</a>
+		<a href="#modifyProblem">Modify Problem</a>
 		<a href="#solved_problems">Solved Problems</a>
 		<a id = "logout" href="http://team017.sci-project.lboro.ac.uk/group_project/LoginPage.html">Log Out</a>
 	</div>
@@ -64,7 +65,7 @@
 		
 
 	<div class="log_call_container">
-		<a class="anchor" id="log_call"></a>
+		<a class="anchor" id="modifyProblem"></a>
 		<h2 style="text-align: center;">Modify Problem</h2>
 
 		<style type="text/css">
@@ -112,6 +113,7 @@
 					</select><br>
 					Notes: <textarea name="notes" rows="5" cols="30"></textarea><br><br><br><br><br><br>
 					<input type="checkbox" name="solved" value="solved">Solved?  <br>
+					<input type="button" value="Close" onclick="hideDiv()"></input>  <br>
 					<input type="submit"><br>
 				</form>
 			</div>
@@ -122,13 +124,19 @@
 					var Modify = document.getElementById("modifyDiv");
                     Modify.style.display = "block";
 				}
+				function showDiv() {
+					var Modify = document.getElementById("modifyDiv");
+                    Modify.style.display = "none";
+				}
         </script>
 
-
-		<div class="container">
+    <div class="container">
 			
 			<a class="anchor" id="solved_problems"></a>
 			<h2>Solved Problems</h2>
+            <span class="white">Search: </span><input type="text" name="search">  
+			<span class="white">Created: </span><select><option>before</option><option>after</option></select><input type="date"></input>
+			<input type="button" value="Search">
 			<table class="active_problems">
 				<thead>
 					<tr>
@@ -164,6 +172,7 @@
 			</table>
 			
 		</div>
+		
 		
     </body>
 </html>
