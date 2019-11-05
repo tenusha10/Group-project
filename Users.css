@@ -143,6 +143,18 @@ a.anchor {
   color: black;
 }
 
-input[type=submit]:hover{
-    background:#F6D300;
+input[type='submit']{
+    background:none;
+    border:0;
+    border:2px solid #F6D300;
+    display:block;
+    margin:20px auto;
+    text-align:center;
+    padding:14px 10px;
+    border-radius:24px;
+    width:130px;
+    color:white;
+    transition:0.5s;
+    cursor:pointer;
+    
 }
