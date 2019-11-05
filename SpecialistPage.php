@@ -124,11 +124,13 @@
 				}
         </script>
 
-
-		<div class="container">
+    <div class="container">
 			
 			<a class="anchor" id="solved_problems"></a>
 			<h2>Solved Problems</h2>
+            <span class="white">Search: </span><input type="text" name="search">  
+			<span class="white">Created: </span><select><option>before</option><option>after</option></select><input type="date"></input>
+			<input type="button" value="Search">
 			<table class="active_problems">
 				<thead>
 					<tr>
@@ -164,6 +166,7 @@
 			</table>
 			
 		</div>
+		
 		
     </body>
 </html>
