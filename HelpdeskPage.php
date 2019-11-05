@@ -71,7 +71,7 @@
         <!--        If the operator needs to add a new problem (caller doesn't specify a previous problem ID)-->
                     <br><br>
                     <h2>New Problem: </h2><br>
-                    Description: <textarea name="Description" rows="5" cols="30"></textarea><br>
+                    Description: <textarea name="Description" rows="5" cols="30"></textarea><br><br><br><br><br>
                     Problem Type: <select name="problemType">
                     <option value="">Select...</option>
                     <optgroup label="Hardware">
@@ -111,7 +111,7 @@
                     <br><br>
                     <h2>Modify Problem: </h2><br>
                     Problem Num: <input type="text" name="num"><br>
-                    Description: v<br>
+                    Description: <textarea name="Description" rows="5" cols="30"></textarea><br><br><br><br><br>
                     Problem Type: <select name="problemType">
                     <option value="">Select...</option>
                     <optgroup label="Hardware">
