@@ -181,6 +181,10 @@
                     newSpecialist.style.display = "none";
                     modifySpecialist.style.display = "block";
                 }
+                function hideDiv() {
+                    newSpecialist.style.display = "none";
+                    modifySpecialist.style.display = "none";
+                }
             </script>
 
 		</div>   
@@ -302,6 +306,7 @@
             
             <input type = "button" onclick="showDivNewSpecialist()" value="Add Specialist"></input><br>
             <input type = "button" onclick="showDivModifySpecialist()" value="Modify Specialist"> </input><br>
+            <input type = "button" onclick="hideDiv()" value="Hide"> </input><br>
             <div id = "newSpecialist">
                 <form method="post">
                     <h2>Add Specialist</h2>
