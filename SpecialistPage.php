@@ -74,7 +74,7 @@
         </style> 
 
 		<div id="callDiv">
-            <input type="button" value="Modify Problem" onclick="showDiv()"><br>
+            <input type="button" value="Modify Problem" onclick="showDiv()"></input><br>
         </div>
 
 		<div id="modifyDiv">
