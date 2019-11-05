@@ -53,7 +53,7 @@
                 <option value="new">New Problem</option>
                 <option value="old">Old Problem</option>
                 <option value="other">Other</option>
-                </select><br>          
+                </select>          
             </div>
 
             <div id="otherDiv">
@@ -63,7 +63,7 @@
         <!--        If the caller is  calling about something else (not sure where to submit this data if at all)-->
                     Notes: <textarea name="notes" rows="5" cols="30"></textarea><br><br><br><br><br>
 
-                    <input type="button" value="Close" onclick="hideDiv()"></input>  <br>
+                    <input type="button" value="Close" onclick="hideDiv()"></input>  
                     <input type="submit"><br>
                 </form>
             </div>
@@ -102,7 +102,7 @@
                     Notes: <textarea name="notes" rows="5" cols="30"></textarea><br><br><br><br><br><br>
                     <input type="checkbox" name="solved" value="solved">Solved?<br>
 
-                    <input type="button" value="Close" onclick="hideDiv()"></input>  <br>
+                    <input type="button" value="Close" onclick="hideDiv()"></input>  
                     <input type="submit"><br>
                 </form>
             </div>
@@ -142,7 +142,8 @@
                     </select><br>
                     Notes: <textarea name="notes" rows="5" cols="30"></textarea><br><br><br><br><br><br>
                     <input type="checkbox" name="solved" value="solved">Solved?  <br>
-                    <input type="button" value="Close" onclick="hideDiv()"></input><br>
+
+                    <input type="button" value="Close" onclick="hideDiv()"></input>
                     <input type="submit"><br>
                 </form>
             </div>
