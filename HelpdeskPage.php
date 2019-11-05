@@ -14,13 +14,10 @@
 			<a href="#log_call">Log Call</a>
 			<a href="#active_problems">Active Problems</a>
 			<a href="#solved_problems">Solved Problems</a>
-<<<<<<< HEAD
 			<a href="#specialist">Specialists</a>
 			<a href="#employees">Employees</a>
-=======
             <a href="#specialist">Specialists</a>
             <a href="#addEmployee">Add User</a>
->>>>>>> 42e8acb80aa1ce792a8728b1609b7f08353dd9e1
 			<a id = "logout" href="http://team017.sci-project.lboro.ac.uk/group_project/LoginPage.html">Log Out</a>
 		</div>
 		<div class="header">
@@ -395,8 +392,6 @@
 					?>
 		</tbody>
 		</div>
-<<<<<<< HEAD
-		
 		<div class="container">
 		<a class="anchor" id="employees"></a>
 		<h2>Employees</h2>
@@ -416,8 +411,5 @@
 					?>
 		</tbody>
 		</div>
-=======
-
->>>>>>> 42e8acb80aa1ce792a8728b1609b7f08353dd9e1
 	</body>
 </html>
