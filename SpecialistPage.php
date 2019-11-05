@@ -124,7 +124,7 @@
 					var Modify = document.getElementById("modifyDiv");
                     Modify.style.display = "block";
 				}
-				function showDiv() {
+				function hideDiv() {
 					var Modify = document.getElementById("modifyDiv");
                     Modify.style.display = "none";
 				}
