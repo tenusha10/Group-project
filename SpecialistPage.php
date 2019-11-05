@@ -80,10 +80,10 @@
 
 		<div id="modifyDiv">
 				<form action="modify_problem.php" method="post">
-		<!--        If the operator needs to modify an existing problem (caller specifies their problem ID) then that
+		<!--        If the specialist needs to modify an existing problem (caller specifies their problem ID) then that
 					corresponding problem data fills the input things and the operator can change them and resubmit it to
 					the DB-->
-					<br><br>
+					
 					<h2>Modify Problem: </h2><br>
 					Problem Num: <input type="text" name="num"><br>
 					Description: <input type="text" name="caller"><br>
