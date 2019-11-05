@@ -74,7 +74,7 @@
         </style> 
 
 		<div id="callDiv">
-            <input type="button" value="Modify Problem" onclick="showDiv()"><br>
+            <input type="button" value="Modify Problem" onclick="showDiv()"></input><br>
         </div>
 
 		<div id="modifyDiv">
@@ -119,8 +119,10 @@
 
 		<script>
                 function showDiv() {
-                      modifyDiv.style.display = "block";
-            </script>
+					var Modify = document.getElementById("modifyDiv");
+                    Modify.style.display = "block";
+				}
+        </script>
 
 
 		<div class="container">
