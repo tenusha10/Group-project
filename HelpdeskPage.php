@@ -300,7 +300,7 @@
 
             
             <input type = "button" onclick="showDivNewSpecialist()" value="Add Specialist"></input></br>
-            <input type = "button" onclick="showDivModifySpecialist()" value="Modify Specialist"> </input>
+            <input type = "button" onclick="showDivModifySpecialist()" value="Modify Specialist"> </input></br>
             <div id = "newSpecialist">
                 <form method="post">
                     Name: <input type="text" name="name"></input><br>
