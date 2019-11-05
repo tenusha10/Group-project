@@ -300,10 +300,11 @@
             </style> 
 
             
-            <input type = "button" onclick="showDivNewSpecialist()" value="Add Specialist"></input></br>
-            <input type = "button" onclick="showDivModifySpecialist()" value="Modify Specialist"> </input></br>
+            <input type = "button" onclick="showDivNewSpecialist()" value="Add Specialist"></input><br>
+            <input type = "button" onclick="showDivModifySpecialist()" value="Modify Specialist"> </input><br>
             <div id = "newSpecialist">
                 <form method="post">
+                    <h2>Add Specialist</h2>
                     Name: <input type="text" name="name"></input><br>
                     Tel Number: <input type="text" name="tel"></input><br>
                     Speciality: <input type="text" name="speciality"></input><br>
@@ -314,6 +315,7 @@
 
             <div id="modifySpecialist">
                 <form method="post">
+                    <h2>Modify Specialist</h2>
                     Name: <input type="text" name="name"></input><br>
                     Tel Number: <input type="text" name="tel"></input><br>
                     Speciality: <input type="text" name="speciality"></input><br>
