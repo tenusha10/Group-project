@@ -156,7 +156,7 @@ input[type='submit']{
 
 input[type='button']{
 	position: relative;
-	right:300;
+	left:300;
     background:none;
     border:0;
     border:2px solid #F6D300;
