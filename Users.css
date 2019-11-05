@@ -155,6 +155,6 @@ input[type=submit] {
     cursor:pointer; 
 }
 
-input[type='submit']:hover{
+input[type=submit]:hover{
     background:#F6D300;
 }
