@@ -65,7 +65,18 @@
 
 	<div class="log_call_container">
 		<a class="anchor" id="log_call"></a>
-		<h2 style="text-align: center;">Log a Call</h2>
+		<h2 style="text-align: center;">Modify Problem</h2>
+
+		<style type="text/css">
+                #modifyDiv{
+                  display: none;
+                }
+        </style> 
+
+		<div id="callDiv">
+            <input type="button" value="Modify Problem" onclick="showDiv()"><br>
+        </div>
+
 		<div id="modifyDiv">
 				<form action="modify_problem.php" method="post">
 		<!--        If the operator needs to modify an existing problem (caller specifies their problem ID) then that
@@ -106,6 +117,10 @@
 			</div>
 		</div>
 
+		<script>
+                function showDiv() {
+                      modifyDiv.style.display = "block";
+            </script>
 
 
 		<div class="container">
