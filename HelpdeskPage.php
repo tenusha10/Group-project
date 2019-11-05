@@ -219,7 +219,8 @@
 			
 			<a class="anchor" id="solved_problems"></a>
 			<h2>Solved Problems</h2>
-			<span class="white">Created</span><select><option>before</option><option>after</option></select><input type="date"></input>
+            <span class="white">Search: </span><input type="text" name="search">  
+			<span class="white">Created: </span><select><option>before</option><option>after</option></select><input type="date"></input>
 			<input type="button" value="Search">
 			<table class="active_problems">
 				<thead>
@@ -263,7 +264,7 @@
 			<table class="specialist">
 
 
-				<thead><tr><th>Specialist Name</th><th>Speciality</th><th>Assigned Jobs</th><th>Availability</th></tr></thead>
+				<thead><tr><th>Specialist Name</th><th>Speciality</th><th>Assigned Jobs</th><th>Availability</th><th>Location</th></tr></thead>
 				<tbody>
 					<?php 
 						for($i=0;$i<=10; $i=$i+1){
@@ -273,8 +274,8 @@
 								<td>'.(($i+1)*7).'</td>
 								<td><select id="availability">
 								<option value = "available">Available</option>
-								<option value = "unavailable">Unavailable</option>
-								</td>
+								<option value = "unavailable">Unavailable</option></td>
+								<td>London</td>
 							</tr>';
 						}
 					?>
@@ -302,7 +303,6 @@
 		</tbody>
         </table>
     </div>
-            
             
             
     <div class="log_call_container">
@@ -392,6 +392,5 @@
                   }
             </script>
         </div>
-
 	</body>
 </html>
