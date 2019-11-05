@@ -264,7 +264,7 @@
 			<table class="specialist">
 
 
-				<thead><tr><th>Specialist Name</th><th>Speciality</th><th>Assigned Jobs</th><th>Availability</th></tr></thead>
+				<thead><tr><th>Specialist Name</th><th>Speciality</th><th>Assigned Jobs</th><th>Availability</th><th>Location</th></tr></thead>
 				<tbody>
 					<?php 
 						for($i=0;$i<=10; $i=$i+1){
@@ -274,8 +274,8 @@
 								<td>'.(($i+1)*7).'</td>
 								<td><select id="availability">
 								<option value = "available">Available</option>
-								<option value = "unavailable">Unavailable</option>
-								</td>
+								<option value = "unavailable">Unavailable</option></td>
+								<td>London</td>
 							</tr>';
 						}
 					?>
@@ -394,5 +394,24 @@
             </script>
         </div>
 
+	<div class="container">
+		<a class="anchor" id="employees"></a>
+		<h2>Employees</h2>
+		<table class="employees">
+		<thead><tr><th>Name</th><th>ID number</th><th>Job Title</th><th>Department</th><th>Phone Number</th><th>Location</th></tr></thead>
+		<tbody>
+			<?php 
+						for($i=0;$i<=10; $i=$i+1){
+							echo '<tr>
+								<td>Name'.(1+$i).'</td>
+								<td>123</td>
+								<td>Accountant</td>
+								<td>Accounting</td>
+								<td>123456</td>
+								<td>London</td>
+							</tr>';
+						}
+					?>
+		</tbody>
 	</body>
 </html>
