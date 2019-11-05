@@ -172,37 +172,6 @@
                       Other.style.display = "none";
                   }
                   }
-                
-                function showDivAdd() {
-                  var selector2 = document.getElementById("Add");
-                  var value2 = selector2[selector2.selectedIndex].value
-                  var addSpecialist = document.getElementById("newSpecialist");
-                  var editSpecialist = document.getElementById("modifySpecialist");
-                  var addOperator = document.getElementById("addOperator");
-                  if (value2=="addSpecialist"){
-                      addSpecialist.style.display = "none";
-                      editSpecialist.style.display = "none";
-                      addOperator.style.display = "none";
-                      addSpecialist.style.display = "block";
-                  }
-                  else if (value2 == "editSpecialist"){
-                      addSpecialist.style.display = "none";
-                      editSpecialist.style.display = "none";
-                      addOperator.style.display = "none";
-                      editSpecialist.style.display = "block";
-                  }
-                  else if (value2 == "addOperator"){
-                      addSpecialist.style.display = "none";
-                      editSpecialist.style.display = "none";
-                      addOperator.style.display = "none";
-                      addOperator.style.display = "block";
-                  }
-                  else if (value2 == ""){
-                      addSpecialist.style.display = "none";
-                      editSpecialist.style.display = "none";
-                      addOperator.style.display = "none";
-                  }
-                  }
             </script>
 
 		</div>   
@@ -329,9 +298,9 @@
             
             <select id="Add" onchange="showDivAdd()">
                 <option value="">Select...</option>
-                <option value="new">New Specialist</option>
-                <option value="old">Modify Specialist</option>
-                <option value="other">Add Operator</option>
+                <option value="addSpecialist">New Specialist</option>
+                <option value="editSpecialist">Modify Specialist</option>
+                <option value="addOperator">Add Operator</option>
             </select><br>     
             
             <div id = "newSpecialist">
@@ -366,6 +335,39 @@
                     <input type="submit"></submit>
                 </form>
             </div>
+
+            <script>
+                function showDivAdd() {
+                  var selector2 = document.getElementById("Add");
+                  var value2 = selector2[selector2.selectedIndex].value
+                  var newSpecialist = document.getElementById("newSpecialist");
+                  var modifySpecialist = document.getElementById("modifySpecialist");
+                  var addOperator = document.getElementById("addOperator");
+                  if (value2=="addSpecialist"){
+                      newSpecialist.style.display = "none";
+                      modifySpecialist.style.display = "none";
+                      addOperator.style.display = "none";
+                      newSpecialist.style.display = "block";
+                  }
+                  else if (value2 == "editSpecialist"){
+                      newSpecialist.style.display = "none";
+                      modifySpecialist.style.display = "none";
+                      addOperator.style.display = "none";
+                      modifySpecialist.style.display = "block";
+                  }
+                  else if (value2 == "addOperator"){
+                      newSpecialist.style.display = "none";
+                      modifySpecialist.style.display = "none";
+                      addOperator.style.display = "none";
+                      addOperator.style.display = "block";
+                  }
+                  else if (value2 == ""){
+                      newSpecialist.style.display = "none";
+                      modifySpecialist.style.display = "none";
+                      addOperator.style.display = "none";
+                  }
+                  }
+            </script>
         </div>
 
 	<div class="container">
