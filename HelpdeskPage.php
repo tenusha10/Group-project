@@ -327,11 +327,9 @@
 
             <div id="addOperator">
                 <form method="post">
-                    <h2><Add Operator/h2>
+                    <h2>Add Operator</h2>
                     Name: <input type="text" name="name"></input><br>
                     Tel Number: <input type="text" name="tel"></input><br>
-                    Speciality: <input type="text" name="speciality"></input><br>
-                    Availability: <input type="text" name="availability"></input><br>
                     <input type="submit"></submit>
                 </form>
             </div>
