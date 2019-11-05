@@ -188,10 +188,10 @@ input[type='button']:hover{
     cursor:pointer;   
 }
 
-input[type='button']{
+input[type='button']:active{
 	position: relative;
 	left:0;
-    background:none;
+    background:#F6D300;
     border:0;
     border:2px solid #F6D300;
     display:block;
