@@ -297,7 +297,7 @@
 								<td>Accountant</td>
 								<td>Accounting</td>
 								<td>123456</td>
-								<td>London<td>
+								<td>London</td>
 							</tr>';
 						}
 					?>
