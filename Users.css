@@ -67,7 +67,7 @@ h2 {
 
 .log_call_container input[type=submit]{
      position: relative;
-     right: 0;
+     right: 200px;
 }
 
 .log_call_container input[type='submit']:hover{
