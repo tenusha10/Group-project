@@ -52,7 +52,7 @@ h1.head{
 }
 .box input[type='text']:focus, .box input[type='password']:focus{
     width:280px;
-    border-color:#27ae60;
+    border-color:#F6D300;
 }
 
 .box input[type='button']{
