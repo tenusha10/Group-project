@@ -15,6 +15,7 @@
 	<div class="navbar">
 		<a href="#title">Home</a>
 		<a href="#active_problems">Active Problems</a>
+		<a href="#modifyProblem">Modify Problem</a>
 		<a href="#solved_problems">Solved Problems</a>
 		<a id = "logout" href="http://team017.sci-project.lboro.ac.uk/group_project/LoginPage.html">Log Out</a>
 	</div>
@@ -64,7 +65,7 @@
 		
 
 	<div class="log_call_container">
-		<a class="anchor" id="log_call"></a>
+		<a class="anchor" id="modifyProblem"></a>
 		<h2 style="text-align: center;">Modify Problem</h2>
 
 		<style type="text/css">
