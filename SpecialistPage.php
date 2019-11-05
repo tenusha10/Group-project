@@ -113,6 +113,7 @@
 					</select><br>
 					Notes: <textarea name="notes" rows="5" cols="30"></textarea><br><br><br><br><br><br>
 					<input type="checkbox" name="solved" value="solved">Solved?  <br>
+					<input type="button" value="Close" onclick="hideDiv()"></input>  <br>
 					<input type="submit"><br>
 				</form>
 			</div>
@@ -122,6 +123,10 @@
                 function showDiv() {
 					var Modify = document.getElementById("modifyDiv");
                     Modify.style.display = "block";
+				}
+				function showDiv() {
+					var Modify = document.getElementById("modifyDiv");
+                    Modify.style.display = "none";
 				}
         </script>
 
