@@ -174,30 +174,30 @@
                   }
                 
                 function showDivAdd() {
-                  var selector = document.getElementById("Add");
-                  var value = selector[selector.selectedIndex].value
+                  var selector2 = document.getElementById("Add");
+                  var value2 = selector2[selector2.selectedIndex].value
                   var addSpecialist = document.getElementById("newSpecialist");
                   var editSpecialist = document.getElementById("modifySpecialist");
                   var addOperator = document.getElementById("addOperator");
-                  if (value=="addSpecialist"){
+                  if (value2=="addSpecialist"){
                       addSpecialist.style.display = "none";
                       editSpecialist.style.display = "none";
                       addOperator.style.display = "none";
                       addSpecialist.style.display = "block";
                   }
-                  else if (value == "editSpecialist"){
+                  else if (value2 == "editSpecialist"){
                       addSpecialist.style.display = "none";
                       editSpecialist.style.display = "none";
                       addOperator.style.display = "none";
                       editSpecialist.style.display = "block";
                   }
-                  else if (value == "addOperator"){
+                  else if (value2 == "addOperator"){
                       addSpecialist.style.display = "none";
                       editSpecialist.style.display = "none";
                       addOperator.style.display = "none";
                       addOperator.style.display = "block";
                   }
-                  else if (value == ""){
+                  else if (value2 == ""){
                       addSpecialist.style.display = "none";
                       editSpecialist.style.display = "none";
                       addOperator.style.display = "none";
@@ -332,7 +332,7 @@
                 <option value="new">New Specialist</option>
                 <option value="old">Modify Specialist</option>
                 <option value="other">Add Operator</option>
-                </select><br>     
+            </select><br>     
             
             <div id = "newSpecialist">
                 <form method="post">
