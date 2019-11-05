@@ -298,33 +298,27 @@
                 }
             </style> 
 
-                Job Title: <select id="jobType" onchange="showDiv()">
-                <option value="">Select...</option>
-                <option value="new">New Problem</option>
-                <option value="old">Old Problem</option>
-                <option value="other">Other</option>
-                </select><br>
-
+            
             <input type = "button" onclick="showDivNewSpecialist()" value="Add Specialist"></input></br>
-                <input type = "button" onclick="showDivModifySpecialist()" value="Modify Specialist"> </input>
-                <div id = "newSpecialist">
-                    <form method="post">
-                        Name: <input type="text" name="name"></input><br>
-                        Tel Number: <input type="text" name="tel"></input><br>
-                        Speciality: <input type="text" name="speciality"></input><br>
-                        Availability: <input type="text" name="availability"></input><br>
-                        <input type="submit"> Submit </submit>
-                    </form>
-                </div>
+            <input type = "button" onclick="showDivModifySpecialist()" value="Modify Specialist"> </input>
+            <div id = "newSpecialist">
+                <form method="post">
+                    Name: <input type="text" name="name"></input><br>
+                    Tel Number: <input type="text" name="tel"></input><br>
+                    Speciality: <input type="text" name="speciality"></input><br>
+                    Availability: <input type="text" name="availability"></input><br>
+                    <input type="submit"> Submit </submit>
+                </form>
+            </div>
 
-                <div id="modifySpecialist">
-                    <form method="post">
-                        Name: <input type="text" name="name"></input><br>
-                        Tel Number: <input type="text" name="tel"></input><br>
-                        Speciality: <input type="text" name="speciality"></input><br>
-                        Availability: <input type="text" name="availability"></input><br>
-                        <input type="submit"></submit>
-                    </form>
+            <div id="modifySpecialist">
+                <form method="post">
+                    Name: <input type="text" name="name"></input><br>
+                    Tel Number: <input type="text" name="tel"></input><br>
+                    Speciality: <input type="text" name="speciality"></input><br>
+                    Availability: <input type="text" name="availability"></input><br>
+                    <input type="submit"></submit>
+                </form>
             </div>
         </div>
 	</body>
