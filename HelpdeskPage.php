@@ -173,18 +173,36 @@
                   }
                   }
                 
-                function showDivNewSpecialist() {
-                    newSpecialist.style.display = "block";
-                    modifySpecialist.style.display = "none";
-                }
-                function showDivModifySpecialist() {
-                    newSpecialist.style.display = "none";
-                    modifySpecialist.style.display = "block";
-                }
-                function hideDiv() {
-                    newSpecialist.style.display = "none";
-                    modifySpecialist.style.display = "none";
-                }
+                function showDivAdd() {
+                  var selector = document.getElementById("Add");
+                  var value = selector[selector.selectedIndex].value
+                  var addSpecialist = document.getElementById("newSpecialist");
+                  var editSpecialist = document.getElementById("modifySpecialist");
+                  var addOperator = document.getElementById("addOperator");
+                  if (value=="addSpecialist"){
+                      addSpecialist.style.display = "none";
+                      editSpecialist.style.display = "none";
+                      addOperator.style.display = "none";
+                      addSpecialist.style.display = "block";
+                  }
+                  else if (value == "editSpecialist"){
+                      addSpecialist.style.display = "none";
+                      editSpecialist.style.display = "none";
+                      addOperator.style.display = "none";
+                      editSpecialist.style.display = "block";
+                  }
+                  else if (value == "addOperator"){
+                      addSpecialist.style.display = "none";
+                      editSpecialist.style.display = "none";
+                      addOperator.style.display = "none";
+                      addOperator.style.display = "block";
+                  }
+                  else if (value == ""){
+                      addSpecialist.style.display = "none";
+                      editSpecialist.style.display = "none";
+                      addOperator.style.display = "none";
+                  }
+                  }
             </script>
 
 		</div>   
@@ -301,12 +319,19 @@
                 #modifySpecialist{
                   display: none;
                 }
+                #addOperator{
+                  display: none;
+                }
             </style> 
 
             
-            <input type = "button" onclick="showDivNewSpecialist()" value="Add Specialist"></input><br>
-            <input type = "button" onclick="showDivModifySpecialist()" value="Modify Specialist"> </input><br>
-            <input type = "button" onclick="hideDiv()" value="Hide"> </input><br>
+            <select id="Add" onchange="showDivAdd()">
+                <option value="">Select...</option>
+                <option value="new">New Specialist</option>
+                <option value="old">Modify Specialist</option>
+                <option value="other">Add Operator</option>
+                </select><br>     
+            
             <div id = "newSpecialist">
                 <form method="post">
                     <h2>Add Specialist</h2>
@@ -321,6 +346,17 @@
             <div id="modifySpecialist">
                 <form method="post">
                     <h2>Modify Specialist</h2>
+                    Name: <input type="text" name="name"></input><br>
+                    Tel Number: <input type="text" name="tel"></input><br>
+                    Speciality: <input type="text" name="speciality"></input><br>
+                    Availability: <input type="text" name="availability"></input><br>
+                    <input type="submit"></submit>
+                </form>
+            </div>
+
+            <div id="addOperator">
+                <form method="post">
+                    <h2><Add Operator/h2>
                     Name: <input type="text" name="name"></input><br>
                     Tel Number: <input type="text" name="tel"></input><br>
                     Speciality: <input type="text" name="speciality"></input><br>
