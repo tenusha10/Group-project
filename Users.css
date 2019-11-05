@@ -154,3 +154,7 @@ input[type=submit] {
     transition:0.5s;
     cursor:pointer; 
 }
+
+input[type='submit']:hover{
+    background:#F6D300;
+}
