@@ -121,7 +121,8 @@
                 function showDiv() {
 					var Modify = document.getElementById("modifyDiv");
                     Modify.style.display = "block";
-            </script>
+				}
+        </script>
 
 
 		<div class="container">
