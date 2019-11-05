@@ -53,7 +53,7 @@ h2 {
      right: 0;
 }
 
-.log_call_container input[type=submit]:hover{
+.log_call_container input[type='submit']:hover{
     background:#F6D300;
 }
 
