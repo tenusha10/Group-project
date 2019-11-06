@@ -80,7 +80,7 @@
                     <!--If the operator needs to add a new problem (caller doesn't specify a previous problem ID)-->
                     <br><br>
                     <h2>New Problem: </h2><br>
-                    Description: <textarea name="Description" rows="5" cols="30"></textarea><br><br><br><br><br>
+                    Description: <textarea name="Description" rows="5" cols="30"></textarea><br><br><br><br><br><br>
 
                     Problem Type: <select name="problemType">
                         <option value="">Select...</option>
@@ -109,7 +109,7 @@
 		                <option value="none">None</option>
                     </select><br>
                     
-                    Notes: <textarea name="notes" rows="5" cols="30"></textarea><br><br><br><br><br><br>
+                    Add Notes: <textarea name="notes" rows="5" cols="30"></textarea><br><br><br><br><br><br>
                     <input type="checkbox" name="solved" value="solved">Solved?<br>
 
                     <input type="button" value="Close" onclick="hideDiv()"></input>  
@@ -125,7 +125,7 @@
                     <br><br>
                     <h2>Modify Problem: </h2><br>
                     Problem Num: <input type="text" name="num"><br>
-                    Description: <textarea name="Description" rows="5" cols="30"></textarea><br><br><br><br><br>
+                    Description: <textarea name="Description" rows="5" cols="30"></textarea><br><br><br><br><br><br>
                     Problem Type: <select name="problemType">
                     <option value="">Select...</option>
                     <optgroup label="Hardware">
@@ -150,7 +150,8 @@
                     <option value="bert">Bert</option>
                     <option value="clara">Clara</option>
                     </select><br>
-                    Notes: <textarea name="notes" rows="5" cols="30"></textarea><br><br><br><br><br><br>
+                    Existing Notes: <textarea name="notes" rows="5" cols="30" readonly></textarea><br><br><br><br><br><br>
+                    Add Notes: <textarea name="notes" rows="5" cols="30"></textarea><br><br><br><br><br><br>
                     <input type="checkbox" name="solved" value="solved">Solved?  <br>
 
                     <input type="button" value="Close" onclick="hideDiv()"></input>

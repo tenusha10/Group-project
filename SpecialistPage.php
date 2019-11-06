@@ -111,7 +111,8 @@
 					<option value="bert">Bert</option>
 					<option value="clara">Clara</option>
 					</select><br>
-					Notes: <textarea name="notes" rows="5" cols="30"></textarea><br><br><br><br><br><br>
+					Existing Notes: <textarea name="notes" rows="5" cols="30" readonly></textarea><br><br><br><br><br><br>
+                    Add Notes: <textarea name="notes" rows="5" cols="30"></textarea><br><br><br><br><br><br>
 					<input type="checkbox" name="solved" value="solved">Solved?  <br>
 					<input type="button" value="Close" onclick="hideDiv()"></input> 
 					<input type="submit"><br>
