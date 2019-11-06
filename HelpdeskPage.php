@@ -313,6 +313,8 @@
 		<a class="anchor" id="employees"></a>
 		<h2>Employees</h2>
 		<table class="employees">
+            <span class="white">Search: </span><input type="text" name="search">  
+			<input type="button" value="Search">
 		<thead><tr><th>Name</th><th>ID number</th><th>Job Title</th><th>Department</th><th>Phone Number</th><th>Location</th></tr></thead>
 		<tbody>
 			<?php 
