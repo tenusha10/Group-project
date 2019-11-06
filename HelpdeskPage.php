@@ -17,7 +17,7 @@
 			<a href="#solved_problems">Solved Problems</a>
 			<a href="#specialist">Specialists</a>
 			<a href="#employees">Employees</a>
-            <a href="#addEmployee">Add User</a>
+            <a href="#addEmployee">Edit</a>
 			<a id = "logout" href="http://team017.sci-project.lboro.ac.uk/group_project/LoginPage.html">Log Out</a>
 		</div>
 
@@ -69,7 +69,7 @@
                     Notes: <textarea name="notes" rows="5" cols="30"></textarea><br><br><br><br><br>
 
                     <!--Button to hide the div in order to clean up the appearance of the website-->
-                    <input type="button" value="Close" onclick="hideDiv()"></input>  
+                    <input type="button" value="Close" onclick="hideDiv()">
                     <input type="submit"><br>
                 </form>
             </div>
@@ -112,7 +112,7 @@
                     Add Notes: <textarea name="notes" rows="5" cols="30"></textarea><br><br><br><br><br><br>
                     <input type="checkbox" name="solved" value="solved">Solved?<br>
 
-                    <input type="button" value="Close" onclick="hideDiv()"></input>  
+                    <input type="button" value="Close" onclick="hideDiv()"> 
                     <input type="submit"><br>
                 </form>
             </div>
@@ -154,7 +154,7 @@
                     Add Notes: <textarea name="notes" rows="5" cols="30"></textarea><br><br><br><br><br><br>
                     <input type="checkbox" name="solved" value="solved">Solved?  <br>
 
-                    <input type="button" value="Close" onclick="hideDiv()"></input>
+                    <input type="button" value="Close" onclick="hideDiv()">
                     <input type="submit"><br>
                 </form>
             </div>
@@ -247,7 +247,7 @@
 			<a class="anchor" id="solved_problems"></a>
 			<h2>Solved Problems</h2>
             <span class="white">Search: </span><input type="text" name="search">  
-			<span class="white">Created: </span><select><option>before</option><option>after</option></select><input type="date"></input>
+			<span class="white">Created: </span><select><option>before</option><option>after</option></select><input type="date">
 			<input type="button" value="Search">
 			<table class="active_problems">
 				<thead>
@@ -335,7 +335,7 @@
             
     <div class="log_call_container">
             <a class="anchor" id="addEmployee"></a>
-			<h2>Add Helpdesk Operator or Specialist</h2>
+			<h2>Edit</h2>
             <style type="text/css">
                 #newSpecialist{
                   display: none;
@@ -346,6 +346,9 @@
                 #addOperator{
                   display: none;
                 }
+                #newType{
+                    display: none;
+                }
             </style> 
 
             
@@ -354,36 +357,49 @@
                 <option value="addSpecialist">New Specialist</option>
                 <option value="editSpecialist">Modify Specialist</option>
                 <option value="addOperator">Add Operator</option>
+                <option value="addType">Add Problem Type</option>
             </select><br>     
             
             <div id = "newSpecialist">
                 <form method="post">
                     <h2>Add Specialist</h2>
-                    Name: <input type="text" name="name"></input><br>
-                    Tel Number: <input type="text" name="tel"></input><br>
-                    Speciality: <input type="text" name="speciality"></input><br>
-                    Availability: <input type="text" name="availability"></input><br>
-                    <input type="submit"></submit>
+                    Name: <input type="text" name="name"><br>
+                    Tel Number: <input type="text" name="tel"><br>
+                    Speciality: <input type="text" name="speciality"><br>
+                    Availability: <input type="text" name="availability"><br>
+                    <input type="submit">
                 </form>
             </div>
 
             <div id="modifySpecialist">
                 <form method="post">
                     <h2>Modify Specialist</h2>
-                    Name: <input type="text" name="name"></input><br>
-                    Tel Number: <input type="text" name="tel"></input><br>
-                    Speciality: <input type="text" name="speciality"></input><br>
-                    Availability: <input type="text" name="availability"></input><br>
-                    <input type="submit"></submit>
+                    Name: <input type="text" name="name"><br>
+                    Tel Number: <input type="text" name="tel"><br>
+                    Speciality: <input type="text" name="speciality"><br>
+                    Availability: <input type="text" name="availability"><br>
+                    <input type="submit">
                 </form>
             </div>
 
             <div id="addOperator">
                 <form method="post">
                     <h2>Add Operator</h2>
-                    Name: <input type="text" name="name"></input><br>
-                    Tel Number: <input type="text" name="tel"></input><br>
-                    <input type="submit"></submit>
+                    Name: <input type="text" name="name"><br>
+                    Tel Number: <input type="text" name="tel"><br>
+                    <input type="submit">
+                </form>
+            </div>
+
+            <div id = "newType">
+                <form method="post">
+                    <h2>Add Problem Type</h2>
+<!--                Input the more general type the problem falls under then give the more refined name of the problem type and give the spcialists
+                    who it applies to-->
+                    General: <input type="text" name="general"><br> 
+                    Refined: <input type="text" name="refined"><br>
+                    Specialists: <input type="text" name="speciality"><br>
+                    <input type="submit">
                 </form>
             </div>
 
@@ -394,28 +410,39 @@
                   var newSpecialist = document.getElementById("newSpecialist");
                   var modifySpecialist = document.getElementById("modifySpecialist");
                   var addOperator = document.getElementById("addOperator");
+                  var addType = document.getElementById("newType");
                   if (value2=="addSpecialist"){
                       newSpecialist.style.display = "none";
                       modifySpecialist.style.display = "none";
                       addOperator.style.display = "none";
+                      addType.style.display = "none";
                       newSpecialist.style.display = "block";
                   }
                   else if (value2 == "editSpecialist"){
                       newSpecialist.style.display = "none";
                       modifySpecialist.style.display = "none";
                       addOperator.style.display = "none";
+                      addType.style.display = "none";
                       modifySpecialist.style.display = "block";
                   }
                   else if (value2 == "addOperator"){
                       newSpecialist.style.display = "none";
                       modifySpecialist.style.display = "none";
                       addOperator.style.display = "none";
+                      addType.style.display = "none";
                       addOperator.style.display = "block";
+                  }
+                  else if (value2 == "addType"){
+                      newSpecialist.style.display = "none";
+                      modifySpecialist.style.display = "none";
+                      addOperator.style.display = "none";
+                      addType.style.display = "block";
                   }
                   else if (value2 == ""){
                       newSpecialist.style.display = "none";
                       modifySpecialist.style.display = "none";
                       addOperator.style.display = "none";
+                      addType.style.display = "none";
                   }
                   }
             </script>
