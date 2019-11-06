@@ -289,8 +289,8 @@
 			<a class="anchor" id="specialist"></a>
 			<h2>Specialists</h2>
 			<table class="specialist">
-
-
+                <span class="white">Search: </span><input type="text" name="search">  
+			    <input type="button" value="Search">
 				<thead><tr><th>Specialist Name</th><th>Speciality</th><th>Assigned Jobs</th><th>Availability</th><th>Location</th></tr></thead>
 				<tbody>
 					<?php 
