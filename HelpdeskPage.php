@@ -200,18 +200,6 @@
                     Other.style.display = "none";
                   }
 
-                  function hideEditDiv(){
-                    var newSpec = document.getElementById("newSpecialist");
-                    var modifySpec = document.getElementById("modifySpecialist");
-                    var addOp = document.getElementById("addOperator");
-                    var addType = document.getElementById("newType");
-
-                    newSpec.style.display = "none";
-                    modifySpec.style.display = "none";
-                    addOp.style.display = "none";
-                    addType.style.display = "none";
-                  }
-
             </script>
 
 		</div>   
@@ -394,6 +382,8 @@
                     Tel Number: <input type="text" name="tel"><br>
                     Speciality: <input type="text" name="speciality"><br>
                     Availability: <input type="text" name="availability"><br>
+
+                    <input type="button" value="Close" onclick="hideEditDiv()"> 
                     <input type="submit">
                 </form>
             </div>
@@ -403,6 +393,8 @@
                     <h2>Add Operator</h2>
                     Name: <input type="text" name="name"><br>
                     Tel Number: <input type="text" name="tel"><br>
+
+                    <input type="button" value="Close" onclick="hideEditDiv()"> 
                     <input type="submit">
                 </form>
             </div>
@@ -415,6 +407,8 @@
                     General: <input type="text" name="general"><br> 
                     Refined: <input type="text" name="refined"><br>
                     Specialists: <input type="text" name="speciality"><br>
+
+                    <input type="button" value="Close" onclick="hideEditDiv()"> 
                     <input type="submit">
                 </form>
             </div>
@@ -460,6 +454,18 @@
                       addOperator.style.display = "none";
                       addType.style.display = "none";
                   }
+                  }
+
+                  function hideEditDiv(){
+                    var newSpec = document.getElementById("newSpecialist");
+                    var modifySpec = document.getElementById("modifySpecialist");
+                    var addOp = document.getElementById("addOperator");
+                    var addType = document.getElementById("newType");
+
+                    newSpec.style.display = "none";
+                    modifySpec.style.display = "none";
+                    addOp.style.display = "none";
+                    addType.style.display = "none";
                   }
             </script>
         </div>
