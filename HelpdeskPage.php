@@ -69,7 +69,7 @@
                     Notes: <textarea name="notes" rows="5" cols="30"></textarea><br><br><br><br><br>
 
                     <!--Button to hide the div in order to clean up the appearance of the website-->
-                    <input type="button" value="Close" onclick="hideDiv()">
+                    <input type="button" value="Close" onclick="hidelogCallDiv()">
                     <input type="submit"><br>
                 </form>
             </div>
@@ -111,7 +111,7 @@
                     
                     Add Notes: <textarea name="notes" rows="5" cols="30"></textarea><br><br><br><br><br><br>
                     <input type="checkbox" name="solved" value="solved">Solved?<br>
-                    <input type="button" value="Close" onclick="hideDiv()"> 
+                    <input type="button" value="Close" onclick="hidelogCallDiv()"> 
                     <input type="submit"><br>
                 </form>
             </div>
@@ -153,7 +153,7 @@
                     Add Notes: <textarea name="notes" rows="5" cols="30"></textarea><br><br><br><br><br><br>
                     <input type="checkbox" name="solved" value="solved">Solved?  <br>
 
-                    <input type="button" value="Close" onclick="hideDiv()">
+                    <input type="button" value="Close" onclick="hidelogCallDiv()">
                     <input type="submit"><br>
                 </form>
             </div>
@@ -190,7 +190,7 @@
                   }
                   }
 
-                  function hideDiv(){
+                  function hidelogCallDiv(){
                     var New = document.getElementById("newDiv");
                     var Modify = document.getElementById("modifyDiv");
                     var Other = document.getElementById("otherDiv");
@@ -199,6 +199,19 @@
                     Modify.style.display = "none";
                     Other.style.display = "none";
                   }
+
+                  function hideEditDiv(){
+                    var newSpec = document.getElementById("newSpecialist");
+                    var modifySpec = document.getElementById("modifySpecialist");
+                    var addOp = document.getElementById("addOperator");
+                    var addType = document.getElementById("newType");
+
+                    newSpec.style.display = "none";
+                    modifySpec.style.display = "none";
+                    addOp.style.display = "none";
+                    addType.style.display = "none";
+                  }
+
             </script>
 
 		</div>   
