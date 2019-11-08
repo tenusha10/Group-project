@@ -17,6 +17,7 @@
 		<a href="#active_problems">Active Problems</a>
 		<a href="#modifyProblem">Modify Problem</a>
 		<a href="#solved_problems">Solved Problems</a>
+		<a href="#specialist">Specialists</a>
 		<a id = "logout" href="http://team017.sci-project.lboro.ac.uk/group_project/LoginPage.html">Log Out</a>
 	</div>
 		
@@ -174,6 +175,31 @@
 			
 		</div>
 		
+		<div class="container">
+			<a class="anchor" id="specialist"></a>
+			<h2>Specialists</h2>
+			<table class="specialist">
+                <span class="white">Search: </span><input type="text" name="search">  
+			    <input type="button" value="Search">
+				<thead><tr><th>Specialist Name</th><th>Speciality</th><th>Assigned Jobs</th><th>Availability</th><th>Location</th></tr></thead>
+				<tbody>
+					<?php 
+						for($i=0;$i<=10; $i=$i+1){
+							echo '<tr>
+								<td>Name'.(1+$i).'</td>
+								<td>IT</td>
+								<td>'.(($i+1)*7).'</td>
+								<td><select id="availability">
+								<option value = "available">Available</option>
+								<option value = "unavailable">Unavailable</option></td>
+								<td>London</td>
+							</tr>';
+						}
+					?>
+				</tbody>
+			</table>
+		</div>				
+
 		<div id="google_translate_element"></div>
         <script type="text/javascript">
             function googleTranslateElementInit() {
