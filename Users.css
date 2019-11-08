@@ -204,4 +204,34 @@ input[type='button']:active{
     cursor:pointer;   
 }
 
-
+.box input[type='text'], .box input[type='password']{
+    background:none;
+    border:0;
+    border:2px solid #F6D300;
+    display:block;
+    margin:20px auto;
+    text-align:center;
+    padding:14px 10px;
+    border-radius:24px;
+    width:200px;
+    color:white;
+    transition:0.5s;
+}
+.box input[type='text']:focus, .box input[type='password']:focus{
+    width:280px;
+    border-color:#F6D300;
+}
+.box h1{
+    color:white;
+}
+.skinny{
+	color:black;
+	display:inline-block;
+	width: 40%;
+	padding:10px;
+	background:#191919;
+	text-align: center;
+	border:2px solid #F6D300;
+	border-radius:24px;
+	margin:20px;
+ }
