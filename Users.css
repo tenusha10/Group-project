@@ -27,7 +27,7 @@ h2 {
 	margin:20px;
  }
  
- .log_call_container{
+ .inputContainer{
 	color:white;
 	display:inline-block;
 	width: 80%;
@@ -41,31 +41,31 @@ h2 {
 	
  }
  
- .log_call_container input{
+ .inputContainer input{
 	 margin-bottom:10px;
 	 position:absolute;
 	 left:15%;	 
  }
- .log_call_container select{
+ .inputContainer select{
 	 position:absolute;
 	 left:15%;	 
  }
- .log_call_container textarea{
+ .inputContainer textarea{
 	 position:absolute;
 	 left:15%;
      margin: 0px; 
      width: 590px; 
      height: 95px;	 
  }
- .log_call_container br{
+ .inputContainer br{
 	 float:right;
  }
-.log_call_container input[type=submit]{
+.inputContainer input[type=submit]{
      position: relative;
      left: 0;
 }
 
-.log_call_container input[type='submit']:hover{
+.inputContainer input[type='submit']:hover{
     background:#F6D300;
 }
 

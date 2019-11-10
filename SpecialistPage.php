@@ -65,7 +65,7 @@
 	</div>
 		
 
-	<div class="log_call_container">
+	<div class="inputContainer">
 		<a class="anchor" id="modifyProblem"></a>
 		<h2 style="text-align: center;">Modify Problem</h2>
 

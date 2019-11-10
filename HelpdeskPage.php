@@ -28,7 +28,7 @@
 		</div>
         
          <!-- This is the main class for the log call tab of the page -->
-        <div class="log_call_container">
+        <div class="inputContainer">
 			<a class="anchor" id="log_call"></a>
 			<h2 style="text-align: center;">Log a Call</h2>
             
@@ -374,7 +374,7 @@
 		</div>
             
             
-    <div class="log_call_container">
+    <div class="inputContainer">
             <a class="anchor" id="addEmployee"></a>
 			<h2>Edit</h2>
             <style type="text/css">
