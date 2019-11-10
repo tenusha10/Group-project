@@ -17,6 +17,7 @@
 			<a href="#solved_problems">Solved Problems</a>
 			<a href="#specialist">Specialists</a>
 			<a href="#employees">Employees</a>
+            <a href="#eequipment">Equipment</a>
             <a href="#addEmployee">Edit</a>
 			<a id = "logout" href="http://team017.sci-project.lboro.ac.uk/group_project/LoginPage.html">Log Out</a>
 		</div>
@@ -227,7 +228,7 @@
 				</thead>
 				<tbody>
 					<?php 
-						for($i=0;$i<=10; $i=$i+1){
+						for($i=0;$i<10; $i=$i+1){
 							echo '<tr>
 								<td>'.(1+$i).'</td>
 								<td>Example</td>
@@ -269,7 +270,7 @@
 				</thead>
 				<tbody>
 					<?php 
-						for($i=0;$i<=10; $i=$i+1){
+						for($i=0;$i<10; $i=$i+1){
 							echo '<tr>
 								<td>'.(1+$i).'</td>
 								<td>Example</td>
@@ -294,7 +295,7 @@
 				<thead><tr><th>Specialist Name</th><th>Speciality</th><th>Assigned Jobs</th><th>Availability</th><th>Location</th></tr></thead>
 				<tbody>
 					<?php 
-						for($i=0;$i<=10; $i=$i+1){
+						for($i=0;$i<10; $i=$i+1){
 							echo '<tr>
 								<td>Name'.(1+$i).'</td>
 								<td>IT</td>
@@ -319,7 +320,7 @@
 		<thead><tr><th>Name</th><th>ID number</th><th>Job Title</th><th>Department</th><th>Phone Number</th><th>Location</th></tr></thead>
 		<tbody>
 			<?php 
-						for($i=0;$i<=10; $i=$i+1){
+						for($i=0;$i<10; $i=$i+1){
 							echo '<tr>
 								<td>Name'.(1+$i).'</td>
 								<td>123</td>
@@ -336,7 +337,7 @@
 
     <div class="container">
 			<a class="anchor" id="equipment"></a>
-			<h2>Active Problems</h2>
+			<h2>Equipment</h2>
 			<table class="equipment">
 				<thead>
 					<tr>
@@ -357,7 +358,7 @@
 				</thead>
 				<tbody>
 					<?php 
-						for($i=0;$i<=10; $i=$i+1){
+						for($i=0;$i<10; $i=$i+1){
 							echo '<tr>
 								<td>'.(1+$i).'</td>
 								<td>123</td>

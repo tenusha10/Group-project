@@ -49,7 +49,7 @@
 			</thead>
 			<tbody>
 				<?php 
-					for($i=0;$i<=10; $i=$i+1){
+					for($i=0;$i<10; $i=$i+1){
 						echo '<tr>
 							<td>'.(1+$i).'</td>
 							<td>Example</td>
@@ -159,7 +159,7 @@
 				</thead>
 				<tbody>
 					<?php 
-						for($i=0;$i<=10; $i=$i+1){
+						for($i=0;$i<10; $i=$i+1){
 							echo '<tr>
 								<td>'.(1+$i).'</td>
 								<td>Example</td>
@@ -184,7 +184,7 @@
 				<thead><tr><th>Specialist Name</th><th>Speciality</th><th>Assigned Jobs</th><th>Availability</th><th>Location</th></tr></thead>
 				<tbody>
 					<?php 
-						for($i=0;$i<=10; $i=$i+1){
+						for($i=0;$i<10; $i=$i+1){
 							echo '<tr>
 								<td>Name'.(1+$i).'</td>
 								<td>IT</td>
