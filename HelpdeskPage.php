@@ -346,7 +346,6 @@
 						<th>Make</th>
 						<th>Problems in last month</th>
 						<th>Total Problems</th>
-						<th>See More</th>
 						
 						<!--
 						<th>Assigned To</th>
@@ -360,7 +359,6 @@
 					<?php 
 						for($i=0;$i<10; $i=$i+1){
 							echo '<tr>
-								<td>'.(1+$i).'</td>
 								<td>123</td>
 								<td>Printer</td>
 								<td>Make-It-All</td>
