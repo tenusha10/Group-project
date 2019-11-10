@@ -333,6 +333,44 @@
 		</tbody>
         </table>
     </div>
+
+    <div class="container">
+			<a class="anchor" id="equipment"></a>
+			<h2>Active Problems</h2>
+			<table class="equipment">
+				<thead>
+					<tr>
+						<th>Serial Number</th>
+						<th>Type</th>
+						<th>Make</th>
+						<th>Problems in last month</th>
+						<th>Total Problems</th>
+						<th>See More</th>
+						
+						<!--
+						<th>Assigned To</th>
+						<th>Serial Number</th>
+						<th>OS</th>
+						<th>Software</th>
+						-->
+					</tr>
+				</thead>
+				<tbody>
+					<?php 
+						for($i=0;$i<=10; $i=$i+1){
+							echo '<tr>
+								<td>'.(1+$i).'</td>
+								<td>123</td>
+								<td>Printer</td>
+								<td>Make-It-All</td>
+								<td>2</td>
+								<td>5</td>
+							</tr>';
+						}
+					?>
+				</tbody>
+			</table>
+		</div>
             
             
     <div class="log_call_container">
