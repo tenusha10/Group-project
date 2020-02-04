@@ -71,8 +71,8 @@
 
                     <!--Button to hide the div in order to clean up the appearance of the website-->
                     <input type="button" value="Close" onclick="hidelogCallDiv()">
-                    <input type="submit and finish"><br>
-                    <input type="submit and new problem"><br>
+                    <input type="submit"><br>
+                    
                 </form>
             </div>
             
