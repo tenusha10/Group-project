@@ -27,12 +27,10 @@
 		<table class="specialist_stats">
 			<thead>
 				<tr>
-					<th>Number</th>
-					<th>Problem Description</th>
-					<th>Created</th>
-					<th>Logged By</th>
-					<th>Reported By</th>
-					<th>See More</th>
+					<th>Name</th>
+					<th>Average Time to solve problem</th>
+					<th>Number of Problems solved </th>
+					<th>Number of Active Problems </th>
 						
 					<!--
 					<th>Assigned To</th>
@@ -46,12 +44,10 @@
 				<?php 
 					for($i=0;$i<10; $i=$i+1){
 						echo '<tr>
-							<td>'.(1+$i).'</td>
-							<td>Example</td>
-							<td>01/01/2020</td>
-							<td>User1</td>
-							<td>User2</td>
-							<td><button>See More</button></td>
+							<td> John Doe</td>
+							<td>#</td>
+							<td>#</td>
+							<td>#</td>
 						</tr>';
 					}
 				?>
