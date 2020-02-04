@@ -56,7 +56,7 @@
 	</div>
 	<div class="container">
 		<a class="anchor" id="hardwareStats"></a>
-		<h2>Specialist Stats</h2>
+		<h2>Hardware Stats</h2>
 		<table class="hardware_stats">
 			<thead>
 				<tr>
@@ -86,6 +86,7 @@
 				?>
 			</tbody>
 		</table>
+		<h2>Software Stats </h2>
 		<table class="software_stats">
 			<thead>
 				<tr>
@@ -114,9 +115,10 @@
 			</tbody>
 		</table>
 	</div>
+
 	<div class="container">
 		<a class="anchor" id="trainingStats"></a>
-		<h2>Specialist Stats</h2>
+		<h2>Staff Training </h2>
 		<table class="training_stats">
 			<thead>
 				<tr>
