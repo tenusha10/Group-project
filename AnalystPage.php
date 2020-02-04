@@ -18,7 +18,7 @@
 			<a href="#specialist">Specialist</a>
 			<a href="#equipment_software">Equipment & software</a>
 			<a href="#training">Training</a>
-			<a id = "logout" href="http://team017.sci-project.lboro.ac.uk/group_project/LoginPage.html">Log Out</a>
+			<a id = "logout" href="http://team017.sci-project.lboro.ac.uk/group_project/LoginPage.php">Log Out</a>
 		</div>
         <div class="container">
 			<a class="anchor" id="active_problems"></a>
