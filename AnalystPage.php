@@ -54,7 +54,97 @@
 			</tbody>
 		</table>
 	</div>
-
+	<div class="container">
+		<a class="anchor" id="hardwareStats"></a>
+		<h2>Specialist Stats</h2>
+		<table class="hardware_stats">
+			<thead>
+				<tr>
+					<th>Serial number</th>
+					<th>Type</th>
+					<th>Make</th>
+					<th>Number of Problems </th>
+						
+					<!--
+					<th>Assigned To</th>
+					<th>Serial Number</th>
+					<th>OS</th>
+					<th>Software</th>
+					-->
+				</tr>
+			</thead>
+			<tbody>
+				<?php 
+					for($i=0;$i<10; $i=$i+1){
+						echo '<tr>
+							<td>#</td>
+							<td>..</td>
+							<td>..</td>
+							<td>#</td>
+						</tr>';
+					}
+				?>
+			</tbody>
+		</table>
+		<table class="software_stats">
+			<thead>
+				<tr>
+					<th>Software Name</th>
+					<th>Version</th>
+					<th>Number of Problems </th>
+						
+					<!--
+					<th>Assigned To</th>
+					<th>Serial Number</th>
+					<th>OS</th>
+					<th>Software</th>
+					-->
+				</tr>
+			</thead>
+			<tbody>
+				<?php 
+					for($i=0;$i<10; $i=$i+1){
+						echo '<tr>
+							<td>#</td>
+							<td>..</td>
+							<td>..</td>
+						</tr>';
+					}
+				?>
+			</tbody>
+		</table>
+	</div>
+	<div class="container">
+		<a class="anchor" id="trainingStats"></a>
+		<h2>Specialist Stats</h2>
+		<table class="training_stats">
+			<thead>
+				<tr>
+					<th>Problem Type</th>
+					<th>Average Time to solve</th>
+					<th>Number of Occurances </th>
+						
+					<!--
+					<th>Assigned To</th>
+					<th>Serial Number</th>
+					<th>OS</th>
+					<th>Software</th>
+					-->
+				</tr>
+			</thead>
+			<tbody>
+				<?php 
+					for($i=0;$i<10; $i=$i+1){
+						echo '<tr>
+							<td> printer broken</td>
+							<td>#</td>
+							<td>#</td>
+						</tr>';
+					}
+				?>
+			</tbody>
+		</table>
+	</div>
 
 
 		
