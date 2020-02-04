@@ -71,7 +71,8 @@
 
                     <!--Button to hide the div in order to clean up the appearance of the website-->
                     <input type="button" value="Close" onclick="hidelogCallDiv()">
-                    <input type="submit" value="Hello"><br>
+                    <input type="submit"><br>
+                    
                     
                 </form>
             </div>
@@ -114,7 +115,8 @@
                     Add Notes: <textarea name="notes" rows="5" cols="30"></textarea><br><br><br><br><br><br>
                     <input type="checkbox" name="solved" value="solved">Solved?<br>
                     <input type="button" value="Close" onclick="hidelogCallDiv()"> 
-                    <input type="submit"><br>
+                    <input type="submit" value="Submit and add Problem"><br>
+                    <input type="submit" value="Submit and add Close"><br>
                 </form>
             </div>
 
