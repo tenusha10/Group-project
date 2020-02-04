@@ -15,9 +15,9 @@
 
 		<div class="navbar">
 			<a href="#title">Home</a>
-			<a href="#specialist">Specialist</a>
-			<a href="#equipment_software">Equipment & software</a>
-			<a href="#training">Training</a>
+			<a href="#specialistStats">Specialist Stats</a>
+			<a href="#hardwareStats">Hardware & Software</a>
+			<a href="#trainingStats">Staff Training</a>
 			<a id = "logout" href="http://team017.sci-project.lboro.ac.uk/group_project/LoginPage.php">Log Out</a>
 	</div>
     
