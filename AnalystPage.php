@@ -5,7 +5,6 @@
 		<title>Analyst</title>
 		
         <link href="Users.css" rel="stylesheet">
-		
 	</head>
     <div class="header">
 			<a class="anchor" id="title"></a>
@@ -54,6 +53,48 @@
 			</tbody>
 		</table>
 	</div>
+		<?php 
+		$dataPoints = array(array("label"=> "Food + Drinks", "y"=> 590),
+	array("label"=> "Activities and Entertainments", "y"=> 261),
+	array("label"=> "Health and Fitness", "y"=> 158),
+	array("label"=> "Shopping & Misc", "y"=> 72),
+	array("label"=> "Transportation", "y"=> 191),
+	array("label"=> "Rent", "y"=> 573),
+	array("label"=> "Travel Insurance", "y"=> 126)
+);
+?>
+<script>
+window.onload = function () {
+ 
+var chart = new CanvasJS.Chart("chartContainer", {
+	animationEnabled: true,
+	exportEnabled: true,
+	title:{
+		text: "Average Expense Per Day  in Thai Baht"
+	},
+	subtitles: [{
+		text: "Currency Used: Thai Baht (฿)"
+	}],
+	data: [{
+		type: "pie",
+		showInLegend: "true",
+		legendText: "{label}",
+		indexLabelFontSize: 16,
+		indexLabel: "{label} - #percent%",
+		yValueFormatString: "฿#,##0",
+		dataPoints: <?php echo json_encode($dataPoints, JSON_NUMERIC_CHECK); ?>
+	}]
+});
+chart.render();
+ 
+}
+</script>
+<div id="chartContainer"></div>
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+	
+
+
+
 	<div class="container">
 		<a class="anchor" id="hardwareStats"></a>
 		<h2>Hardware Stats</h2>
