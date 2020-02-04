@@ -5,6 +5,8 @@
 		<title>Analyst</title>
 		
         <link href="Users.css" rel="stylesheet">
+		<div id="chartContainer"></div>
+		<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
 	</head>
     <div class="header">
 			<a class="anchor" id="title"></a>
@@ -53,16 +55,16 @@
 			</tbody>
 		</table>
 	</div>
-		<?php 
+	<?php 
 		$dataPoints = array(array("label"=> "Food + Drinks", "y"=> 590),
-	array("label"=> "Activities and Entertainments", "y"=> 261),
-	array("label"=> "Health and Fitness", "y"=> 158),
-	array("label"=> "Shopping & Misc", "y"=> 72),
-	array("label"=> "Transportation", "y"=> 191),
-	array("label"=> "Rent", "y"=> 573),
-	array("label"=> "Travel Insurance", "y"=> 126)
-);
-?>
+		array("label"=> "Activities and Entertainments", "y"=> 261),
+		array("label"=> "Health and Fitness", "y"=> 158),
+		array("label"=> "Shopping & Misc", "y"=> 72),
+		array("label"=> "Transportation", "y"=> 191),
+		array("label"=> "Rent", "y"=> 573),
+		array("label"=> "Travel Insurance", "y"=> 126)
+		);
+	?>
 <script>
 window.onload = function () {
  
@@ -86,11 +88,10 @@ var chart = new CanvasJS.Chart("chartContainer", {
 	}]
 });
 chart.render();
- 
 }
+
 </script>
-<div id="chartContainer"></div>
-<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+
 	
 
 
