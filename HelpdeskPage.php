@@ -115,8 +115,8 @@
                     Add Notes: <textarea name="notes" rows="5" cols="30"></textarea><br><br><br><br><br><br>
                     <input type="checkbox" name="solved" value="solved">Solved?<br>
                     <input type="button" value="Close" onclick="hidelogCallDiv()"> 
-                    <input type="submit" value="Submit and add Problem"><br>
-                    <input type="submit" value="Submit and add Close"><br>
+                    <input type="submit" value="Submit + Add Problem"><br>
+                    <input type="submit" value="Submit + Close"><br>
                 </form>
             </div>
 
